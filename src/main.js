@@ -42,3 +42,18 @@ const displayData = () => {
 };
 
 btnLogin.addEventListener('click', loginAccess);
+const classBotonF1 = document.getElementsByClass('botonF1');
+const classContenedor = document.getElemensByClass('contenedor');
+const classBtn = document.getElementsByClass('btn');
+
+const mouseOver = () => {
+  classBtn.classList.add('animacionVer');
+};
+
+const mouseOut = () => {
+  classBtn.classList.remove('animacionVer');
+};
+
+classBotonF1.addEventListener('mouseover', mouseOver);
+classContenedor.addEventListener('mouseout', mouseOut);
+
