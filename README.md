@@ -2,6 +2,7 @@
 <p align="center">
  <img src="src/img/pgo_logo.png">
 </p>
+
 ## Índice
 
 - [Índice](#índice)
@@ -61,6 +62,7 @@ Para nuestro proyecto **Data Lovers** del Common Core, hemos optado por el tema 
   <a href="https://zpl.io/bAleOon">Zeplin Desktop</a>
   <br> 
   <img src="src/img/CapturaD.PNG">
+  <br>
   <a href="https://zpl.io/aX5lKnM">Zeplin Mobile</a>
   <br>
   <img src="src/img/CapturaM.PNG">
