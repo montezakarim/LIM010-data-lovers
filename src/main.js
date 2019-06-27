@@ -1,12 +1,21 @@
 const displayPokemon = document.getElementById('myPokemonPics');
 const btnLogin = document.getElementById('btnLogin');
 const formLogin = document.getElementById('login');
+const message = document.getElementById('message');
+message.classList.add('hide');
 const objectPokemon = POKEMON.pokemon;
 
 const loginAccess = () => {
-  formLogin.classList.add('hide');
-  btnLogin.classList.add('hide');
-  displayData();
+  const password = document.getElementById('password').value;
+  const email = document.getElementById('email').value;
+  if (email === 'LABORATORIA' && password === 'LABORATORIA') {
+    formLogin.classList.add('hide');
+    btnLogin.classList.add('hide');
+    displayData();
+  } else {
+    message.classList.remove('hide');
+    message.innerHTML = 'Usuario o password incorrectos';
+  }
 };
 
 const displayData = () => {
@@ -30,7 +39,7 @@ const displayData = () => {
       </figure> `;
       allPokemons += pokemon.multipliers.length;
       document.getElementById('header').innerHTML = `
-      <h1>Total región Kanto: ${allPokemons}</h1>`;
+      <h4>Total atrapados: ${allPokemons}</h4>`;
     }
   }
 };

@@ -1,18 +1,19 @@
-html {
+*{
+    outline: none;
+}
+html, body, header {
     display: flex;
     justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
 }
 
-main{
-    
-    height: 100vh;
-}
+main{height: 100%;display: flex;}
 
 .login {
     display: flex;
     flex-direction: column;
     outline: none;
-    justify-content: center;
     background-color: #504040;
     width: 375px;
     height: 667px;
@@ -20,18 +21,63 @@ main{
 }
 
 img {
-    height: 20%;
-    width: 51%;
-    margin: auto;
+    width: 32%;
+    margin: 7em auto 0.5em;
+}
+.loginInput {
+    margin: 1.5em auto;
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+    height: 210px;
+    font-size: 17px;
+    line-height: 35px;
+    font-family: calibri;
+}
+
+.user{
+    border-radius:4px;
+    padding: 14px;
+    height: 35px;
+    font-size: 16px;
+}
+
+.btnLogin{
+    background-color: #2C97C1;
+    border-color: #2C97C1;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 16px;
+    height: 45px;
+    border-radius: 4px;
+}
+#message {
+    align-self: center;
+}
+.register{
+    align-self: center;
+
+}
+.forgotPassword{
+    text-align: right;
+    margin: 0.4em;
+    }
+nav{
+    display:flex;
+        flex-wrap: wrap;
+}
+input[type="image" i]{
+    width: 100%;
 }
 
 .wp-caption {
     position: relative;
     padding: 0;
-    margin: 0;
+    margin: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 15%;
+    justify-content: center;
     }
     .wp-caption img {
     display: block;
@@ -41,11 +87,12 @@ img {
     .wp-caption-text {
     opacity: 0;
     position: absolute;
-    width: 100%;
+    width: 80%;
     color: #A1F9FF;
     bottom: 0;
     padding: 0.5em 0.2em;
-    font-weight: 600;
+    font-weight: 100;
+    font-size: 8px;
     z-index: 5;
     box-sizing: border-box;
     background-color: rgba(8,9,13,.8);
@@ -55,16 +102,35 @@ img {
     opacity: 1;
     }
 
-#loginInput {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-#btnLogin {
-    justify-content: space-evenly;
-}
-
 .hide {
     display: none;
+}
+
+@media only screen and (min-width: 768px){
+    html{
+        background-image: url(http://media-s3-us-east-1.ceros.com/hype-beast/images/2018/07/13/a9a51bc0b8d626db493ab5f9a971b043/background-hero.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+    .login {
+
+width: 536px;
+
+height: 501px;
+
+justify-content: center;
+}
+img {
+    width: 25%;
+}
+.loginInput {
+    margin: 0.5em auto;
+    height: 214px;
+    inline-size: 367px;
+}
+.btnLogin{
+    inline-size: 157px;
+    align-self: center;
+}
 }
