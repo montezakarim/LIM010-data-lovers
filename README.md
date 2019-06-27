@@ -32,7 +32,7 @@ Para nuestro proyecto **Data Lovers** del Common Core, hemos optado por el tema 
  Para utilizar el Demo deberán tener como usuario y contraseña _**LABORATORIA**_
 
  <p align="center">
-  <a href="(https://zpl.io/2jMAZBr">Zeplin Desktop</a> |
+  <a href="https://zpl.io/2jMAZBr">Zeplin Desktop</a> |
   <a href="https://zpl.io/VqYDye6">Zeplin Mobile</a>
   <br>
   <img src="src/img/PGOLoginD.PNG">
