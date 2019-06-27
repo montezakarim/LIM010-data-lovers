@@ -1,14 +1,26 @@
 *{
     outline: none;
 }
+body{
+    background-image: url(http://media-s3-us-east-1.ceros.com/hype-beast/images/2018/07/13/a9a51bc0b8d626db493ab5f9a971b043/background-hero.png);
+}
 html, body, header {
+    
     display: flex;
     justify-content: center;
     margin: auto;
     flex-wrap: wrap;
 }
-
-main{height: 100%;display: flex;}
+header{
+    color:#ffffff;
+    font-family:calibri;
+    font-size: 25px;
+    height: 60px;
+    margin-top: -20px;
+ 
+}
+main{height: 100%;
+    display: flex;}
 
 .login {
     display: flex;
@@ -76,7 +88,7 @@ input[type="image" i]{
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    width: 15%;
+    width: 22%;
     justify-content: center;
     }
     .wp-caption img {
@@ -87,16 +99,17 @@ input[type="image" i]{
     .wp-caption-text {
     opacity: 0;
     position: absolute;
-    width: 80%;
+    width: 100%;
     color: #A1F9FF;
     bottom: 0;
     padding: 0.5em 0.2em;
     font-weight: 100;
-    font-size: 8px;
+    font-size: 14px;
     z-index: 5;
     box-sizing: border-box;
     background-color: rgba(8,9,13,.8);
     transition: opacity .3s ease-in-out;
+    font-family: calibri;
     }
     .wp-caption:hover .wp-caption-text {
     opacity: 1;
@@ -107,12 +120,20 @@ input[type="image" i]{
 }
 
 @media only screen and (min-width: 768px){
-    html{
-        background-image: url(http://media-s3-us-east-1.ceros.com/hype-beast/images/2018/07/13/a9a51bc0b8d626db493ab5f9a971b043/background-hero.png);
+    html,body{
+        
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: repeat-y;
         height: 100%;
     }
+
+    header{
+        font-size:50px;
+        height: 150px;
+    }
+    input[type="image" i] {
+    width: 75%;
+}
     .login {
 
 width: 536px;
@@ -120,6 +141,8 @@ width: 536px;
 height: 501px;
 
 justify-content: center;
+
+align-self: center;
 }
 img {
     width: 25%;
@@ -133,4 +156,11 @@ img {
     inline-size: 157px;
     align-self: center;
 }
+.wp-caption {
+    width: 15%;
+}
+ .wp-caption-text {
+     font-size:30px;
+     padding: 0em;
+ }
 }
