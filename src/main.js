@@ -2,6 +2,7 @@ const displayPokemon = document.getElementById('myPokemonPics');
 const btnLogin = document.getElementById('btnLogin');
 const formLogin = document.getElementById('login');
 const message = document.getElementById('message');
+const classContenedor = document.getElementById('contenedor');
 message.classList.add('hide');
 const objectPokemon = POKEMON.pokemon;
 
@@ -39,21 +40,33 @@ const displayData = () => {
       <h4>Total atrapados: ${allPokemons}</h4>`;
     };
   };
+  classContenedor.classList.remove('hide');
 };
 
 btnLogin.addEventListener('click', loginAccess);
-const classBotonF1 = document.getElementsByClass('botonF1');
-const classContenedor = document.getElemensByClass('contenedor');
-const classBtn = document.getElementsByClass('btn');
+
+
+const btn1 = document.getElementById('btn1');
+const btn2 = document.getElementById('btn2');
+const btn3 = document.getElementById('btn3');
+const btn4 = document.getElementById('btn4');
+const btn5 = document.getElementById('btn5');
 
 const mouseOver = () => {
-  classBtn.classList.add('animacionVer');
+  btn1.classList.add('animacionVer');
+  btn2.classList.add('animacionVer');
+  btn3.classList.add('animacionVer');
+  btn4.classList.add('animacionVer');
+  btn5.classList.add('animacionVer');
 };
-
 const mouseOut = () => {
-  classBtn.classList.remove('animacionVer');
+  btn1.classList.remove('animacionVer');
+  btn2.classList.remove('animacionVer');
+  btn3.classList.remove('animacionVer');
+  btn4.classList.remove('animacionVer');
+  btn5.classList.remove('animacionVer');
 };
 
-classBotonF1.addEventListener('mouseover', mouseOver);
+btn1.addEventListener('mouseover', mouseOver);
 classContenedor.addEventListener('mouseout', mouseOut);
 
