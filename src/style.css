@@ -132,6 +132,7 @@ input[type="image" i]{
     background-color: rgba(8,9,13,.8);
     transition: opacity .3s ease-in-out;
     font-family: calibri;
+    border-radius: 50%;
     }
 
 .wp-caption:hover .wp-caption-text {
@@ -149,7 +150,7 @@ input[type="image" i]{
     position:absolute;
     right:0px;
     bottom:0px;
-    z-index:1;
+    z-index: 1;
   }
   .botonF1{
     width:60px;
@@ -159,13 +160,15 @@ input[type="image" i]{
     right:0;
     bottom:0;
     position:absolute;
-    margin: 16px;
+    margin-right:16px;
+    margin-bottom:16px;
     border:none;
     outline:none;
     color:#FFF;
     font-size:36px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     transition:.3s;
+    z-index: 1;  
   }
   span{
     transition:.5s;  
@@ -177,13 +180,13 @@ input[type="image" i]{
     transform:scale(1.1);
   }
   .btn{
-    width: 70px;
-    height: 70px;
+    width:40px;
+    height:40px;
     border-radius:100%;
     border:none;
     color:#FFF;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    font-size: 18px;
+    font-size:28px;
     outline:none;
     position:absolute;
     right:0;
@@ -193,22 +196,22 @@ input[type="image" i]{
   }
   .botonF2{
     background:#2196F3;
-    margin-bottom: 100px;
+    margin-bottom:85px;
     transition:0.5s;
   }
   .botonF3{
     background:#673AB7;
-    margin-bottom: 179px;
+    margin-bottom:130px;
     transition:0.7s;
   }
   .botonF4{
     background:#009688;
-    margin-bottom: 266px;
+    margin-bottom:175px;
     transition:0.9s;
   }
   .botonF5{
     background:#FF5722;
-    margin-bottom: 353px;
+    margin-bottom:220px;
     transition:0.99s;
   }
   .animacionVer{
@@ -239,33 +242,30 @@ input[type="image" i]{
     height: 501px;
     justify-content: center;
     align-self: center;
-}
+    }
 
-img {
-    width: 25%;
-}
+    img {
+        width: 25%;
+    }
 
-.loginInput {
-    margin: 0.5em auto;
-    height: 214px;
-    inline-size: 367px;
-}
+    .loginInput {
+        margin: 0.5em auto;
+        height: 214px;
+        inline-size: 367px;
+    }
 
-.btnLogin{
-    inline-size: 157px;
-    align-self: center;
-}
+    .btnLogin{
+        inline-size: 157px;
+        align-self: center;
+    }
 
-.contenedor{
- heiht: 100px;
-}
-.wp-caption {
-    width: 15%;
-    padding: 29px;
-}
+    .wp-caption {
+        width: 15%;
+        padding: 29px;
+    }
 
- .wp-caption-text {
-     font-size: 18px;
-     padding: 0em;
- }
-}
+    .wp-caption-text {
+        font-size: 18px;
+        padding: 0em;
+    }
+    }

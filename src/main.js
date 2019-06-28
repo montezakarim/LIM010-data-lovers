@@ -4,7 +4,7 @@ const formLogin = document.getElementById('login');
 const message = document.getElementById('message');
 const classContenedor = document.getElementById('contenedor');
 message.classList.add('hide');
-const objectPokemon = POKEMON.pokemon;
+
 
 const loginAccess = () => {
   const password = document.getElementById('password').value;
@@ -53,6 +53,7 @@ const btn4 = document.getElementById('btn4');
 const btn5 = document.getElementById('btn5');
 
 const mouseOver = () => {
+  classContenedor.classList.add('animacionVer');
   btn1.classList.add('animacionVer');
   btn2.classList.add('animacionVer');
   btn3.classList.add('animacionVer');
@@ -60,6 +61,7 @@ const mouseOver = () => {
   btn5.classList.add('animacionVer');
 };
 const mouseOut = () => {
+  classContenedor.classList.remove('animacionVer');
   btn1.classList.remove('animacionVer');
   btn2.classList.remove('animacionVer');
   btn3.classList.remove('animacionVer');
