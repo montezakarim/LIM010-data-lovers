@@ -1,9 +1,11 @@
 *{
     outline: none;
 }
+
 body{
     background-image: url(http://media-s3-us-east-1.ceros.com/hype-beast/images/2018/07/13/a9a51bc0b8d626db493ab5f9a971b043/background-hero.png);
 }
+
 html, body, header {
     
     display: flex;
@@ -11,16 +13,19 @@ html, body, header {
     margin: auto;
     flex-wrap: wrap;
 }
+
 header{
     color:#ffffff;
     font-family:calibri;
-    font-size: 25px;
-    height: 60px;
-    margin-top: -20px;
- 
+    font-size: 28px;
+    height: 86px;
+    margin-top: -5px;
 }
-main{height: 100%;
-    display: flex;}
+
+main{
+    height: 100%;
+    display: flex;
+}
 
 .login {
     display: flex;
@@ -36,6 +41,7 @@ img {
     width: 32%;
     margin: 7em auto 0.5em;
 }
+
 .loginInput {
     margin: 1.5em auto;
     display: flex;
@@ -63,40 +69,56 @@ img {
     height: 45px;
     border-radius: 4px;
 }
+
 #message {
     align-self: center;
 }
+
 .register{
     align-self: center;
-
 }
+
 .forgotPassword{
     text-align: right;
     margin: 0.4em;
     }
+
 nav{
     display:flex;
         flex-wrap: wrap;
 }
+
 input[type="image" i]{
     width: 100%;
 }
 
+.wp-caption:hover{
+    transform: scale(1.3);
+    transition:.5s;
+}
+
+ .wp-caption:hover{
+     background-color:rgb(161,249,255,0.6);
+     border-radius: 50%;
+ }
+
 .wp-caption {
     position: relative;
-    padding: 0;
+    padding: 13px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    width: 22%;
+    width: 26%;
     justify-content: center;
     }
-    .wp-caption img {
+
+.wp-caption img {
     display: block;
     max-width: 100%;
     height: auto;
     }
-    .wp-caption-text {
+
+.wp-caption-text {
     opacity: 0;
     position: absolute;
     width: 100%;
@@ -110,16 +132,95 @@ input[type="image" i]{
     background-color: rgba(8,9,13,.8);
     transition: opacity .3s ease-in-out;
     font-family: calibri;
+    border-radius: 50%;
     }
-    .wp-caption:hover .wp-caption-text {
+
+.wp-caption:hover .wp-caption-text {
     opacity: 1;
+    text-align: center;
     }
 
 .hide {
     display: none;
 }
 
+.contenedor{
+    width:90px;
+    height:240px;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    z-index: 1;
+  }
+  .botonF1{
+    width:60px;
+    height:60px;
+    border-radius:100%;
+    background:#F44336;
+    right:0;
+    bottom:0;
+    position:absolute;
+    margin-right:16px;
+    margin-bottom:16px;
+    border:none;
+    outline:none;
+    color:#FFF;
+    font-size:36px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition:.3s;
+    z-index: 1;  
+  }
+  span{
+    transition:.5s;  
+  }
+  .botonF1:hover span{
+    transform:rotate(360deg);
+  }
+  .botonF1:active{
+    transform:scale(1.1);
+  }
+  .btn{
+    width:40px;
+    height:40px;
+    border-radius:100%;
+    border:none;
+    color:#FFF;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    font-size:28px;
+    outline:none;
+    position:absolute;
+    right:0;
+    bottom:0;
+    margin-right:26px;
+    transform:scale(0);
+  }
+  .botonF2{
+    background:#2196F3;
+    margin-bottom:85px;
+    transition:0.5s;
+  }
+  .botonF3{
+    background:#673AB7;
+    margin-bottom:130px;
+    transition:0.7s;
+  }
+  .botonF4{
+    background:#009688;
+    margin-bottom:175px;
+    transition:0.9s;
+  }
+  .botonF5{
+    background:#FF5722;
+    margin-bottom:220px;
+    transition:0.99s;
+  }
+  .animacionVer{
+    transform:scale(1);
+  }
+  
+
 @media only screen and (min-width: 768px){
+
     html,body{
         
         background-size: cover;
@@ -131,36 +232,40 @@ input[type="image" i]{
         font-size:50px;
         height: 150px;
     }
+
     input[type="image" i] {
     width: 75%;
-}
+    }
+
     .login {
-
-width: 536px;
-
-height: 501px;
-
-justify-content: center;
-
-align-self: center;
-}
-img {
-    width: 25%;
-}
-.loginInput {
-    margin: 0.5em auto;
-    height: 214px;
-    inline-size: 367px;
-}
-.btnLogin{
-    inline-size: 157px;
+    width: 536px;
+    height: 501px;
+    justify-content: center;
     align-self: center;
-}
-.wp-caption {
-    width: 15%;
-}
- .wp-caption-text {
-     font-size:30px;
-     padding: 0em;
- }
-}
+    }
+
+    img {
+        width: 25%;
+    }
+
+    .loginInput {
+        margin: 0.5em auto;
+        height: 214px;
+        inline-size: 367px;
+    }
+
+    .btnLogin{
+        inline-size: 157px;
+        align-self: center;
+    }
+
+    .wp-caption {
+        width: 15%;
+        padding: 29px;
+    }
+
+    .wp-caption-text {
+        font-size: 18px;
+        padding: 0em;
+    }
+    }
