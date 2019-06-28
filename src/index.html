@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
 <html lang="es">
-	<head>
-    <meta charset="utf-8">
-    <title>Data Lovers P-Go</title>
-    <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers P-Go</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header id="header"></header>
@@ -13,40 +13,38 @@
         <section class="login" id="login">
             <img src="img/pgo_logo.png" alt="pokemonGoLogo">
             <div>
-                <div class="loginInput">
-                        <label for="email">Correo electrónico:</label>
-                        <input class="user" id="email" name="email" type="text">
-                        <label for="password">Contraseña:</label>
-                        <input class="user" id="password" name="password" type="password">
-												<p class="forgotPassword"><b>¿Olvidaste tu contraseña?</b></p>				
-								</div>
-                <div class="loginInput">
-										<p id="message" class="hide"></p>
-                        <button class="btnLogin" id="btnLogin"><b>INGRESA</b></button>
-                        <p class="register">¿No tienes una cuenta?
-													<b>Regístrate</b> 
-												</p>
+              <div class="login-input">
+                <label for="email">Correo electrónico:</label>
+                <input class="user" id="email" name="email" type="text">
+                <label for="password">Contraseña:</label>
+                <input class="user" id="password" name="password" type="password">
+                <p class="forgot-password"><b>¿Olvidaste tu contraseña?</b></p>				
+              </div>
+                <div class="login-input">
+                  <p id="message" class="hide"></p>
+                  <button class="btn-login" id="btn-login"><b>INGRESA</b></button>
+                  <p class="register">¿No tienes una cuenta?<b>Regístrate</b></p>
                 </div>   
             </div>
         </section>
         <div class="contenedor hide" id="contenedor">
-            <button class="botonF1" id="btn1">
+            <button class="boton1" id="btn1">
               <span>+</span>
             </button>
-            <button class="btn botonF2" id="btn2">
+            <button class="btn boton2" id="btn2">
               <span>A-Z</span>
             </button>
-            <button class="btn botonF3" id="btn3">
+            <button class="btn boton3" id="btn3">
               <span>Z-A</span>
             </button>
-            <button class="btn botonF4" id="btn4">
+            <button class="btn boton4" id="btn4">
               <span>Spawn </span>
             </button>
-            <button class="btn botonF5" id="btn5">
+            <button class="btn boton5" id="btn5">
               <span>+</span>
             </button>
              </div>
-        <nav id="myPokemonPics"></nav>
+        <nav id="my-pokemon-pics"></nav>
     </main>
     <footer></footer>
     <script src="./data/pokemon/pokemon.js"></script>

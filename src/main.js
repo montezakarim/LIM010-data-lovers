@@ -1,17 +1,16 @@
-const displayPokemon = document.getElementById('myPokemonPics');
-const btnLogin = document.getElementById('btnLogin');
+const displayPokemon = document.getElementById('my_pokemon_pics');
+const loginInput = document.getElementById('login_input');
 const formLogin = document.getElementById('login');
 const message = document.getElementById('message');
 const classContenedor = document.getElementById('contenedor');
 message.classList.add('hide');
-
 
 const loginAccess = () => {
   const password = document.getElementById('password').value;
   const email = document.getElementById('email').value;
   if (email === 'LABORATORIA' && password === 'LABORATORIA') {
     formLogin.classList.add('hide');
-    btnLogin.classList.add('hide');
+    loginInput.classList.add('hide');
     document.body.style.backgroundImage = 'url("img/fondop3.jpg")';
     displayData();
   } else {
@@ -25,15 +24,15 @@ const displayData = () => {
     const pokemon = objectPokemon[i];
     if (pokemon.multipliers === null) {
       displayPokemon.innerHTML += `
-      <figure class="wp-caption">
+      <figure class="wp_caption">
       <input name="${pokemon.name}" type="image" src="${pokemon.img}" alt="${pokemon.name}">
-      <figcaption class="wp-caption-text">${pokemon.name} 0</figcaption>
+      <figcaption class="wp_caption_text">${pokemon.name} 0</figcaption>
       </figure>`;
     } else {
       displayPokemon.innerHTML += `
-      <figure class="wp-caption">
+      <figure class="wp_caption">
       <input name="${pokemon.name}" type="image" src="${pokemon.img}" alt="${pokemon.name}">
-      <figcaption class="wp-caption-text">${pokemon.name} ${pokemon.multipliers.length}</figcaption>
+      <figcaption class="wp_caption_text">${pokemon.name} ${pokemon.multipliers.length}</figcaption>
       </figure> `;
       allPokemons += pokemon.multipliers.length;
       document.getElementById('header').innerHTML = `
@@ -44,7 +43,6 @@ const displayData = () => {
 };
 
 btnLogin.addEventListener('click', loginAccess);
-
 
 const btn1 = document.getElementById('btn1');
 const btn2 = document.getElementById('btn2');
