@@ -17,9 +17,8 @@ html, body, header {
 header{
     color:#ffffff;
     font-family:calibri;
-    font-size: 28px;
-    height: 86px;
-    margin-top: -5px;
+    font-size: 15px;
+    height: 64px;
 }
 
 main{
@@ -90,6 +89,8 @@ nav{
 
 input[type="image" i]{
     width: 100%;
+    border-bottom: solid greenyellow;
+    border-radius: 50%;
 }
 
 .wp-caption:hover{
@@ -229,8 +230,8 @@ input[type="image" i]{
     }
 
     header{
-        font-size:50px;
-        height: 150px;
+        font-size:25px;
+        height: 90px;
     }
 
     input[type="image" i] {
