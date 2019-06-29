@@ -3,7 +3,6 @@ const loginInput = document.getElementsByClassName('login-input')[0];
 const formLogin = document.getElementById('login');
 const message = document.getElementById('message');
 const classContenedor = document.getElementById('contenedor');
-
 message.classList.add('hide');
 
 const loginAccess = () => {
@@ -14,6 +13,7 @@ const loginAccess = () => {
     loginInput.classList.add('hide');
     document.body.style.backgroundImage = 'url("img/fondop3.jpg")';
     displayData();
+    getSpawn();
   } else {
     message.classList.remove('hide');
     message.innerHTML = 'Usuario o password incorrectos';
