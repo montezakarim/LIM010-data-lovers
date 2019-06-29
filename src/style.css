@@ -97,7 +97,7 @@ input[type="image" i]{
     transition:.5s;
 }
 
- .wp-caption:hover{
+.wp-caption:hover{
      background-color:rgb(161,249,255,0.6);
      border-radius: 50%;
  }
