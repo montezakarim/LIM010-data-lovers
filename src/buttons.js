@@ -2,7 +2,7 @@ const classContenedor1 = document.getElementById('contenedor1');
 const classContenedor2 = document.getElementById('contenedor2');
 const classContenedor3 = document.getElementById('contenedor3');
 const classContenedor4 = document.getElementById('contenedor4');
-
+// cambiar nombre botones ordenado
 const btn1 = document.getElementById('btn1');
 const btn2 = document.getElementById('btn2');
 const btn3 = document.getElementById('btn3');
