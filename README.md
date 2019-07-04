@@ -65,13 +65,13 @@ Para nuestro proyecto **Data Lovers** del Common Core, hemos optado por el tema 
 **_Como usuaria quiero poder ver a todos los pokemones al ingresar a la página para saber cuántos tengo y cuántos me faltan atrapar_**
  - *Prototipo de Baja Calidad (mobile y desktop)En Papel*
   <p align="center">
-    <img src="src/img/papel.jpg">
+    <img src="src/img/papel.jpg" width ="431" heigth = "877">
   </p>
  -  *Feedback y mejoras*
   Se mostraban los pokemones en la pantalla, pero sin ninguna base, por lo que se diseño un formato que le figure como base  y de esta manera no queden al aire. 
   Cada pokemón muestra los nombres y si está atrapado o aúm no, además del total de atrapados y los que faltan por atrapar. 
   <p align="center">
-    <img src="src/img/papelpoke0.jpg">
+    <img src="src/img/papelpoke0.jpg" width ="431" heigth = "877">
   </p>
  - *Imagen y link del prototipo de alta fidelidad final (mobile y desktop) en
    Figma.*
@@ -89,7 +89,7 @@ Para nuestro proyecto **Data Lovers** del Common Core, hemos optado por el tema 
   **_Como usuaria quiero poder elegir un pokemon para ver sus características más relevantes_**
  - *Prototipo de Baja Calidad (mobile y desktop)_En Papel_*
   <p align="center">
-    <img src="src/img/papelpokecard.jpg">
+    <img src="src/img/papelpokecard.jpg"width ="431" heigth = "877">
   </p>
 
  -  *Feedback y mejoras*
@@ -104,10 +104,15 @@ Para nuestro proyecto **Data Lovers** del Common Core, hemos optado por el tema 
   **_Como usuaria quiero poder ordenar por orden alfabético (A-Z y Z-A) y frecuencia de aparición (spawn) de manera ascendente (menor a mayor) o descendente (mayor a menor) a los pokemones para poder ubicarlos fácilmente y saber cuáles son los más difíciles de atrapar_**
  - *Prototipo de Baja Calidad (mobile y desktop)_En Papel_*
   <p align="center">
-    <img src="src/img/papelPoke1.jpg">
+    <img src="src/img/papelPoke1.jpg" width ="431" heigth = "877">
   </p>
  -  *Feedback y mejoras*
  - *Imagen y link del prototipo de alta fidelidad final (mobile y desktop) en Figma
+  <p align = "center">
+   <img src="src/img/CapturaD4.PNG" >
+   <br>
+   <img src="src/img/CapturaM4.PNG" width ="300" >
+</p>
 
   ## Historia 5
   **_Como usuaria quiero poder filtrar a los pokemones por tipo y debilidades para saber quiénes y cuántos son de cada tipo y tienen esa debilidad_**
