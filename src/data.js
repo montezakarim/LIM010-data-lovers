@@ -9,7 +9,34 @@ const showCard = (idPoke) => {
   card.classList.remove('hide');
   pokemons.forEach(poke =>{ 
     if (parseInt(idPoke) === poke.id) {
-      card.innerHTML = `<img class="cardImg" src="${poke.img}" alt="${poke.name}" >`;
+      card.innerHTML = `
+      <img class="cardImg" src="${poke.img}" alt="${poke.name}" >
+      <aside class="characteristics">
+      <h2>${poke.name}</h2>
+      <aside class="pokedex">
+        <div>
+        <p> #: ${poke.num}</p>
+        </div>
+        <div>
+        <p>peso: ${poke.weight}</p>
+        </div>
+        <div>
+        <p>talla: ${poke.height}</p>
+        </div>
+      </aside>
+      <aside>
+        <div>
+          <p>tipo:</p>
+          <div>
+          </div>
+        </div>
+        <div>
+          <p>debilidad:</p>
+          <div></div>
+        </div>
+      </aside>
+    </aside>      
+      `;
     }
   });
 };

@@ -484,7 +484,14 @@ body > nav {
   color: #FFF;
 }
 
-.card{height: 82vh;margin: 5vh;width: 50vh;background-color: rgba(0, 0, 0, 0.7);border-radius: 30px;}
+.card{
+  display: grid;
+  height: 82vh;
+  margin: 5vh;
+  width: 50vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+}
 .cardImg {
   display:grid;
   width:40vw;
@@ -496,6 +503,15 @@ body > nav {
   padding: 2em;
   background-color: white;
 }
+.characteristics{
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 284px;
+}
+
+.pokedex{display: flex;justify-content: space-evenly;width: 50vh;}
 
 /* media query----------------------------------------------------------------------------- */
 @media only screen and (min-width: 768px){
