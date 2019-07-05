@@ -2,6 +2,7 @@ const arrayPokemon = POKEMON.pokemon;
 const pokemons = arrayPokemon.map((poke)=>{  
   return poke;
 });
+let filteredArray = pokemons;
 
 
 const btnLogin = document.getElementById('btn-login');
@@ -11,7 +12,6 @@ const message = document.getElementById('message');
 const header = document.getElementById('header');
 const displayPokemon = document.getElementsByClassName('my-pokemon-pics')[0];
 const card = document.getElementById('card');
-const back = document.getElementById('back');
 const home = document.getElementById('home');
 
 const loginAccess = () => {
@@ -30,61 +30,174 @@ const loginAccess = () => {
 
 btnLogin.addEventListener('click', loginAccess);
 
-bug.addEventListener('click', () => filterByTypes('Bug'));
-dark.addEventListener('click', () => filterByTypes('Dark'));
-dragon.addEventListener('click', () => filterByTypes('Dragon'));
-electric.addEventListener('click', () => filterByTypes('Electric'));
-fairy.addEventListener('click', () => filterByTypes('Fairy'));
-fighting.addEventListener('click', () => filterByTypes('Fighting'));
-fire.addEventListener('click', () => filterByTypes('Fire'));
-flying.addEventListener('click', () => filterByTypes('Flying'));
-ghost.addEventListener('click', () => filterByTypes('Ghost'));
-grass.addEventListener('click', () => filterByTypes('Grass'));
-ground.addEventListener('click', () => filterByTypes('Ground'));
-ice.addEventListener('click', () => filterByTypes('Ice'));
-normal.addEventListener('click', () => filterByTypes('Normal'));
-poison.addEventListener('click', () => filterByTypes('Poison'));
-psychic.addEventListener('click', () => filterByTypes('Psychic'));
-rock.addEventListener('click', () => filterByTypes('Rock'));
-steel.addEventListener('click', () => filterByTypes('Steel'));
-water.addEventListener('click', () => filterByTypes('Water'));
+bug.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByTypes('Bug'));
+});
+dark.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByTypes('Dark'));
+});
+dragon.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByTypes('Dragon'));
+});
+electric.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByTypes('Electric'));
+});
+fairy.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByTypes('Fairy'));
+});
+fighting.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByTypes('Fighting'));
+});
+fire.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByTypes('Fire'));
+});
+flying.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByTypes('Flying'));
+});
+ghost.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByTypes('Ghost'));
+});
+grass.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByTypes('Grass'));
+});
+ground.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByTypes('Ground'));
+});
+ice.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByTypes('Ice'));
+});
+normal.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByTypes('Normal'));
+});
+poison.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByTypes('Poison'));
+});
+psychic.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByTypes('Psychic'));
+});
+rock.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByTypes('Rock'));
+});
+steel.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByTypes('Steel'));
+});
+water.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByTypes('Water'));
+});
 
-bugw.addEventListener('click', () => filterByWeaknesses('Bug'));
-darkw.addEventListener('click', () => filterByWeaknesses('Dark'));
-dragonw.addEventListener('click', () => filterByWeaknesses('Dragon'));
-electricw.addEventListener('click', () => filterByWeaknesses('Electric'));
-fairyw.addEventListener('click', () => filterByWeaknesses('Fairy'));
-fightingw.addEventListener('click', () => filterByWeaknesses('Fighting'));
-firew.addEventListener('click', () => filterByWeaknesses('Fire'));
-flyingw.addEventListener('click', () => filterByWeaknesses('Flying'));
-ghostw.addEventListener('click', () => filterByWeaknesses('Ghost'));
-grassw.addEventListener('click', () => filterByWeaknesses('Grass'));
-groundw.addEventListener('click', () => filterByWeaknesses('Ground'));
-icew.addEventListener('click', () => filterByWeaknesses('Ice'));
-normalw.addEventListener('click', () => filterByWeaknesses('Normal'));
-poisonw.addEventListener('click', () => filterByWeaknesses('Poison'));
-psychicw.addEventListener('click', () => filterByWeaknesses('Psychic'));
-rockw.addEventListener('click', () => filterByWeaknesses('Rock'));
-steelw.addEventListener('click', () => filterByWeaknesses('Steel'));
-waterw.addEventListener('click', () => filterByWeaknesses('Water'));
+bugw.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByWeaknesses('Bug'));
+});
+darkw.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByWeaknesses('Dark'));
+});
+dragonw.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByWeaknesses('Dragon'));
+});
+electricw.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByWeaknesses('Electric'));
+});
+fairyw.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByWeaknesses('Fairy'));
+});
+fightingw.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByWeaknesses('Fighting'));
+});
+firew.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByWeaknesses('Fire'));
+});
+flyingw.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByWeaknesses('Flying'));
+});
+ghostw.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByWeaknesses('Ghost'));
+});
+grassw.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByWeaknesses('Grass'));
+});
+groundw.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByWeaknesses('Ground'));
+});
+icew.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByWeaknesses('Ice'));
+});
+normalw.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByWeaknesses('Normal'));
+});
+poisonw.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByWeaknesses('Poison'));
+});
+psychicw.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByWeaknesses('Psychic'));
+});
+rockw.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByWeaknesses('Rock'));
+});
+steelw.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByWeaknesses('Steel'));
+});
+waterw.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  displayData(filterByWeaknesses('Water'));
+});
 
 btn2.addEventListener('click', () => {
   displayPokemon.innerHTML = null;
-  displayData(window.sortPoke(pokemons, 'namedown'));
+  displayData(sortPoke(filteredArray, 'namedown'));
 });
 btn3.addEventListener('click', () => {
   displayPokemon.innerHTML = null;
-  displayData(window.sortPoke(pokemons, 'nameup'));
+  displayData(sortPoke(filteredArray, 'nameup'));
 });
 btn4.addEventListener('click', () => {
   displayPokemon.innerHTML = null;
-  displayData(window.sortSpawns(pokemons, 'avgup'));
+  displayData(sortSpawns(filteredArray, 'avgup'));
 });
 btn5.addEventListener('click', () => {
   displayPokemon.innerHTML = null;
-  displayData(window.sortSpawns(pokemons, 'avgdown'));
+  displayData(sortSpawns(filteredArray, 'avgdown'));
 });
-// btn2.addEventListener('click', sortBy(displayData, 'namedown'));
-// btn3.addEventListener('click', sortBy(displayData, 'nameup'));
-// btn4.addEventListener('click', sortBy(displayData, 'spawnup'));
-// btn5.addEventListener('click', sortBy(displayData, 'spawndown'));
+
+home.addEventListener('click', () => {
+  card.classList.add('hide');
+  displayPokemon.innerHTML = null;
+  header.classList.remove('hide');
+  displayPokemon.classList.remove('hide');
+  filteredArray = pokemons;
+  displayData(filteredArray);
+});

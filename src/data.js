@@ -7,24 +7,24 @@ const showCard = (idPoke) => {
   classContenedor4.classList.add('hide');
   header.classList.add('hide');
   card.classList.remove('hide');
-  back.classList.remove('hide');
   pokemons.forEach(poke =>{ 
     if (parseInt(idPoke) === poke.id) {
-      card.innerHTML += `<img class="cardImg" src="${poke.img}" alt="${poke.name}" >`;
+      card.innerHTML = `<img class="cardImg" src="${poke.img}" alt="${poke.name}" >`;
     }
   });
 };
 // asignar variable para que imprima lo que entre----------------------------------------------------------
 const displayData = (dataToPrint) => {
   let noPokemons = 0;
+  let thePokemons = 0;
   dataToPrint.forEach((poke)=>{
     if (poke.multipliers === null) {
       displayPokemon.innerHTML += `
         <figure class="wp-caption">
-        <input class="pokePic" name="${poke.name}" id="${poke.id}" type="image" src="${poke.img}" alt="${poke.name}">
+        <input class="pokePic untrapped" name="${poke.name}" id="${poke.id}" type="image" src="${poke.img}" alt="${poke.name}">
         <figcaption class="wp-caption-text" type="button">${poke.name} 0</figcaption>
         </figure>`;
-      noPokemons = noPokemons + 1;
+      noPokemons ++;
       return noPokemons;
     } else {
       displayPokemon.innerHTML += `
@@ -32,6 +32,7 @@ const displayData = (dataToPrint) => {
         <input class="pokePic" name="${poke.name}" id="${poke.id}" type="image" src="${poke.img}" alt="${poke.name}">
         <figcaption class="wp-caption-text" type="button">${poke.name} ${poke.multipliers.length}</figcaption>
         </figure> `;
+      thePokemons ++;
     };
   });
   const parentNav = document.querySelectorAll('nav')[0];
@@ -41,7 +42,7 @@ const displayData = (dataToPrint) => {
   };
   parentNav.addEventListener('click', getId);
   header.innerHTML = `
-    <h2>Total atrapados: ${151 - noPokemons} &nbsp; &nbsp; Por atrapar: ${noPokemons}</h2>`;
+    <h2>Total atrapados: ${thePokemons} &nbsp; &nbsp; Por atrapar: ${noPokemons}</h2>`;
   classContenedor1.classList.remove('hide'); 
   classContenedor2.classList.remove('hide'); 
   classContenedor3.classList.remove('hide'); 
@@ -50,19 +51,8 @@ const displayData = (dataToPrint) => {
   return dataToPrint;
 }; 
 
-const getSpawn = () => {
-  pokemons.forEach(poke => {
-    const chance = poke.avg_chance;
-    const time = poke.spawn_time;
-    if (chance && time) {
-      const spawn = parseFloat(chance) * parseFloat(time);
-      // console.log(spawn.toFixed(2));
-    }
-  });
-};
-
 const filterByTypes = (typeString) =>{
-  const filteredArray = pokemons.filter(poke => {
+  filteredArray = pokemons.filter(poke => {
     const types = poke.type;
     const searched = types.find(type =>{
       switch (typeString) {
@@ -110,13 +100,11 @@ const filterByTypes = (typeString) =>{
       return poke;
     }
   });
-  displayPokemon.innerHTML = null;
-  displayData(filteredArray);
   return filteredArray;
 };
 
 const filterByWeaknesses = (typeString) =>{
-  const filteredArray = pokemons.filter(poke => {
+  filteredArray = pokemons.filter(poke => {
     const weakness = poke.weaknesses;
     const searched = weakness.find(type =>{
       switch (typeString) {
@@ -164,8 +152,6 @@ const filterByWeaknesses = (typeString) =>{
       return poke;
     }
   });
-  displayPokemon.innerHTML = null;
-  displayData(filteredArray);
   return filteredArray;
 };
 
@@ -204,23 +190,9 @@ const sortSpawns = (data, sortOrder) => {
   }
   return 0;
 };
- 
+
+window.filterByTypes = filterByTypes;
+window.filterByWeaknesses = filterByWeaknesses;
 window.displayData = displayData;
 window.sortPoke = sortPoke;
 window.sortSpawns = sortSpawns;
-// const sortBy = (array, string) => {
-//   let orderedPokes = [];
-//   if (string === 'nameup') {
-//     orderedPokes = array.slice().sort((aa, bb) => aa.name.localeCompare(bb.name));
-//   }
-//   else if (string === 'namedown') {
-//     orderedPokes = array.slice().sort((aa, bb) => bb.name.localeCompare(aa.name));
-//   }
-//   else if (string === 'avgup') {
-//     orderedPokes = array.slice().sort((aa, bb) => aa.avg_spawns - bb.avg_spawns);
-//   }
-//   else if (string === 'avgdown') {
-//     orderedPokes = array.slice().sort((aa, bb) => bb.avg_spawns - aa.avg_spawns);
-//   } 
-//   return orderedPokes;
-// };

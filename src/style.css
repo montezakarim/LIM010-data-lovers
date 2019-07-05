@@ -4,6 +4,10 @@
 
 
 body{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
   background-image: url(http://media-s3-us-east-1.ceros.com/hype-beast/images/2018/07/13/a9a51bc0b8d626db493ab5f9a971b043/background-hero.png);
 }
 
@@ -20,6 +24,8 @@ header{
   font-family:calibri;
   font-size: 15px;
   height: 64px;
+  position: fixed;
+  z-index: 5;
 }
 
 main{
@@ -43,7 +49,13 @@ main{
   width: 32%;
   margin: 1em auto 1em;
 }
-.logo{width: 45%;margin: 5.7em auto 1.5em;}
+.logo{
+  width: 45%;
+  margin: 5.7em auto 1.5em;
+}
+.untrapped{
+  filter: brightness(0);
+}
 
 .login-input {
   margin: 1.5em auto;
@@ -87,8 +99,9 @@ main{
   }
 /* display ---------------------------------------------------------------------------------------------*/
 nav{
+  margin-top: 48px;
   display:flex;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 input[type="image" i]{
@@ -148,8 +161,8 @@ input[type="image" i]{
 /* botones pokebola-------------------------------------------------------------------------------- */
 .contenedor1{
   width: 70px;
-  height: 265px;
-  position:absolute;
+  height: 245px;
+  position:fixed;
   right: 0px;
   bottom:0px;
   z-index: 6;
@@ -162,7 +175,7 @@ input[type="image" i]{
   background-size: cover;
   right:0;
   bottom:0;
-  position:absolute;
+  position: absolute;
   margin-right: 12px;
   margin-bottom:16px;
   border: solid white;
@@ -192,29 +205,29 @@ input[type="image" i]{
 }
 .boton2{
   background:#FF0000;
-  margin-bottom:85px;
-  margin-right: 15px;
+  margin-bottom: 70px;
+  margin-right: 18px;
   transition:0.5s;
   border:solid #000000;
 }
 .boton3{
   background:#FF0000;
-  margin-bottom:130px;
-  margin-right: 15px;
+  margin-bottom: 114px;
+  margin-right: 18px;
   transition:0.7s;
   border: solid #FFFFFF;
 }
 .boton4{
   background:#FF0000;
-  margin-bottom:175px;
-  margin-right: 15px;
+  margin-bottom: 158px;
+  margin-right: 18px;
   transition:0.9s;
   border:solid #000000;
 }
 .boton5{
   background:#FF0000;
-  margin-bottom:220px;
-  margin-right: 15px;
+  margin-bottom: 203px;
+  margin-right: 18px;
   transition:0.9s;
   border: solid #FFFFFF;
 }
@@ -222,25 +235,7 @@ input[type="image" i]{
   transform:scale(1);
 }
 
-/* boton back and home------------------------------------------------------------------------------------------ */
-.back{
-  background-image: url(img/back.png);
-  background-size:cover;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  border:none;
-  color:#FFF;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  position:absolute;
-  right:0;
-  bottom:0;
-  margin-right: 100px;
-  margin-bottom: 100px;
-}
-.back:active{
-  transform:scale(1.1);
-}
+/* boton home------------------------------------------------------------------------------------------ */
 
 .home{
   background-image: url(img/inicio.png);
@@ -251,11 +246,12 @@ input[type="image" i]{
   border:none;
   color:#FFF;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  position:absolute;
+  position:fixed;
   left: 0;
   bottom:0;
   margin-left: 12px;
   margin-bottom: 16px;
+  z-index: 6;
 }
 .home:active{
   transform:scale(1.1);
@@ -264,8 +260,8 @@ input[type="image" i]{
 /* botones huevo ------------------------------------------------------------------------------------- */
 .contenedor2{
   width: 70px;
-  height: 225px;
-  position:absolute;
+  height: 200px;
+  position: fixed;
   right: 66px;
   bottom:0px;
   z-index: 7;
@@ -293,7 +289,7 @@ input[type="image" i]{
 }
 .boton2km{
   background:rgb(21, 180, 87);
-  margin-bottom:85px;
+  margin-bottom: 70px;
   margin-right: 13px;
   transition:0.5s;
   background-image: url(img/2km.png);
@@ -301,7 +297,7 @@ input[type="image" i]{
 }
 .boton5km{
   background:rgb(243, 175, 27);
-  margin-bottom:130px;
+  margin-bottom: 114px;
   margin-right: 13px;
   transition:0.7s;
   background-image: url(img/5km.png);
@@ -309,7 +305,7 @@ input[type="image" i]{
 }
 .boton10km{
   background:#a025be;
-  margin-bottom:175px;
+  margin-bottom: 158px;
   margin-right: 13px;
   transition:0.9s;
   background-image: url(img/10km.png);
@@ -320,7 +316,7 @@ input[type="image" i]{
 .contenedor3{
     width: 160px;
     height: 356px;
-    position:absolute;
+    position:fixed;
     left: 4.5em;
     bottom:0px;
     z-index: 6;
@@ -328,7 +324,7 @@ input[type="image" i]{
 .contenedor4{
   width: 160px;
   height: 356px;
-  position:absolute;
+  position:fixed;
   left: 10em;
   bottom:0px;
   z-index: 6;
@@ -354,128 +350,127 @@ input[type="image" i]{
 }
 
 .Bug{
-  margin-bottom:85px;
-  margin-right: 5px;
+  margin-bottom: 60px;
+  margin-right: 0px;
   transition:0.5s;
   background-image: url(img/Bug.png);
   background-size: cover;
 }
 .Dark{
-  margin-bottom:130px;
-  margin-right: 5px;
+  margin-bottom: 105px;
+  margin-right: 0px;
   transition:0.7s;
   background-image: url(img/Dark.png);
   background-size: cover;
 }
 .Dragon{
-  margin-bottom:175px;
-  margin-right: 5px;
+  margin-bottom: 150px;
+  margin-right: 0px;
   transition:0.9s;
   background-image: url(img/Dragon.png);
   background-size: cover;
 }
 .Electric{
-  margin-bottom:220px;
-  margin-right: 5px;
+  margin-bottom: 195px;
+  margin-right: 0px;
   transition:1.1s;
   background-image: url(img/Electric.png);
   background-size: cover;
 }
 .Fairy{
-  margin-bottom:265px;
+  margin-bottom: 240px;
   transition:1.3s;
-  margin-right: 5px;
+  margin-right: 0px;
   background-image: url(img/Fairy.png);
   background-size: cover;
 }
 .Fighting{
-  margin-bottom:310px;
-  margin-right: 5px;
+  margin-bottom: 285px;
+  margin-right: 0px;
   transition:1.5s;
   background-image: url(img/Fighting.png);
   background-size: cover;
   }
 .Fire{
-  margin-bottom:85px;
-  margin-right: 65px;
-  margin-left: 1px;
+  margin-bottom: 60px;
+  margin-right: 45px;
   transition:0.5s;
   background-image: url(img/Fire.png);
   background-size: cover;
 }
 .Flying{
-  margin-bottom:130px;
-  margin-right: 65px;
+  margin-bottom: 105px;
+  margin-right: 45px;
   transition:0.7s;
   background-image: url(img/Flying.png);
   background-size: cover;
   }
 .Ghost{
-  margin-bottom:175px;
-  margin-right: 65px;
+  margin-bottom: 150px;
+  margin-right: 45px;
   transition:0.9s;
   background-image: url(img/Ghost.png);
   background-size: cover;
   }
 .Grass{
-  margin-bottom:220px;
-  margin-right: 65px;
+  margin-bottom: 195px;
+  margin-right: 45px;
   transition:1.1s;
   background-image: url(img/Grass.png);
   background-size: cover;
   }
 .Ground{
-  margin-bottom:265px;
-  margin-right: 65px;
+  margin-bottom: 240px;
+  margin-right: 45px;
   transition:1.3s;
   background-image: url(img/Ground.png);
   background-size: cover;
   }
 .Ice{
-  margin-bottom:310px;
-  margin-right: 65px;
+  margin-bottom: 285px;
+  margin-right: 45px;
   transition:1.5s;
   background-image: url(img/Ice.png);
   background-size: cover;
   }
 .Normal{
-  margin-bottom:85px;
-  margin-right: 120px;
+  margin-bottom: 60px;
+  margin-right: 90px;
   transition:0.5s;
   background-image: url(img/Normal.png);
   background-size: cover;
   }
 .Poison{
-  margin-bottom:130px;
-  margin-right: 120px;
+  margin-bottom: 105px;
+  margin-right: 90px;
   transition:0.7s;
   background-image: url(img/Poison.png);
   background-size: cover;
   }
 .Psychic{
-  margin-bottom:175px;
-  margin-right: 120px;
+  margin-bottom: 150px;
+  margin-right: 90px;
   transition:0.9s;
   background-image: url(img/Psychic.png);
   background-size: cover;
   }
 .Rock{
-  margin-bottom:220px;
-  margin-right: 120px;
+  margin-bottom: 195px;
+  margin-right: 90px;
   transition:1.1s;
   background-image: url(img/Rock.png);
   background-size: cover;
   }
 .Steel{
-  margin-bottom:265px;
-  margin-right: 120px;
+  margin-bottom: 240px;
+  margin-right: 90px;
   transition:1.3s;
   background-image: url(img/Steel.png);
   background-size: cover;
   }
 .Water{
-  margin-bottom:310px;
-  margin-right: 120px;
+  margin-bottom: 285px;
+  margin-right: 90px;
   transition:1.5s;
   background-image: url(img/Water.png);
   background-size: cover;
@@ -489,13 +484,7 @@ body > nav {
   color: #FFF;
 }
 
-.card{
-height: 82vh;
-margin: 9vh;
-width: 50vh;
-background-color: rgba(0, 0, 0, 0.7);
-border-radius: 30px;
-}
+.card{height: 82vh;margin: 5vh;width: 50vh;background-color: rgba(0, 0, 0, 0.7);border-radius: 30px;}
 .cardImg {
   display:grid;
   width:40vw;
@@ -520,7 +509,8 @@ border-radius: 30px;
 
   header{
       font-size:25px;
-      height: 90px;
+      height: 77px;
+      align-content: center;
   }
 
   input[type="image" i] {
@@ -573,6 +563,9 @@ border-radius: 30px;
     margin-left: 80px;
     width: 85px;
     left: 13em;
+  }
+  .home{
+    position: fixed;
   }
   }
   .hide{
