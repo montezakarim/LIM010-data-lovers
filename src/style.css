@@ -510,8 +510,15 @@ body > nav {
   flex-direction: column;
   height: 284px;
 }
+.size-img{
+  width: 20px;
+}
 
-.pokedex{display: flex;justify-content: space-evenly;width: 50vh;}
+.pokedex{
+  display: flex;
+  justify-content: space-evenly;
+  width: 50vh;
+}
 
 /* media query----------------------------------------------------------------------------- */
 @media only screen and (min-width: 768px){

@@ -24,15 +24,24 @@ const showCard = (idPoke) => {
         <p>talla: ${poke.height}</p>
         </div>
       </aside>
-      <aside>
+      <aside class="type-size">
         <div>
           <p>tipo:</p>
-          <div>
+          <divclass="type-card">
+          <img class"size-img" src="img/${poke.type[0]}.png" alt="${poke.type[0]}" >
+          <img class"size-img" src="img/${poke.type[1]}.png" alt="${poke.type[1]}" >
+          <img class"size-img" src="img/${poke.type[2]}.png" alt="${poke.type[2]}" >
+          <img class"size-img" src="img/${poke.type[3]}.png" alt="${poke.type[3]}" >
           </div>
         </div>
         <div>
           <p>debilidad:</p>
-          <div></div>
+          <div>
+          <img class"size-img" src="img/${poke.weaknesses[0]}.png" alt="${poke.weaknesses[0]}" >
+          <img class"size-img" src="img/${poke.weaknesses[1]}.png" alt="${poke.weaknesses[1]}" >
+          <img class"size-img" src="img/${poke.weaknesses[2]}.png" alt="${poke.weaknesses[2]}" >
+          <img class"size-img" src="img/${poke.weaknesses[3]}.png" alt="${poke.weaknesses[3]}" >
+          </div>
         </div>
       </aside>
     </aside>      
