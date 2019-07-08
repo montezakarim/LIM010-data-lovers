@@ -58,6 +58,7 @@ const displayData = (dataToPrint) => {
       displayPokemon.innerHTML += `
         <figure class="wp-caption">
         <input class="pokePic untrapped" name="${poke.name}" id="${poke.id}" type="image" src="${poke.img}" alt="${poke.name}">
+        <img class="type_background" src="img/Type_Background_${poke.type[0]}.png" alt="Type_Background_${poke.type[0]}.png">
         <figcaption class="wp-caption-text" type="button">${poke.name} 0</figcaption>
         </figure>`;
       noPokemons ++;
@@ -66,6 +67,7 @@ const displayData = (dataToPrint) => {
       displayPokemon.innerHTML += `
         <figure class="wp-caption">
         <input class="pokePic" name="${poke.name}" id="${poke.id}" type="image" src="${poke.img}" alt="${poke.name}">
+        <img class="type_background" src="img/Type_Background_${poke.type[0]}.png" alt="Type_Background_${poke.type[0]}.png">
         <figcaption class="wp-caption-text" type="button">${poke.name} ${poke.multipliers.length}</figcaption>
         </figure> `;
       thePokemons ++;

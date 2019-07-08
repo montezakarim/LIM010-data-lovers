@@ -201,3 +201,6 @@ home.addEventListener('click', () => {
   filteredArray = pokemons;
   displayData(filteredArray);
 });
+
+
+
