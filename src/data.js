@@ -1,4 +1,3 @@
-
 const showCard = (idPoke) => {
   displayPokemon.classList.add('hide');
   classContenedor1.classList.add('hide');
@@ -229,8 +228,23 @@ const sortSpawns = (data, sortOrder) => {
   return 0;
 };
 
+const filterEgg = (data, kms) => {
+  let egg = [];
+  if (kms === '2 km') {
+    egg = data.filter(poke => (poke.egg === '2 km'));
+  } else if (kms === '5 km') {
+    egg = data.filter(poke => (poke.egg === '5 km'));
+  } else if (kms === '10 km') {
+    egg = data.filter(poke => (poke.egg === '10 km'));
+  } else if (kms === 'Not in Eggs') {
+    egg = data.filter(poke => (poke.egg === 'Not in Eggs'));
+  }
+  return egg;
+};
+
 window.filterByTypes = filterByTypes;
 window.filterByWeaknesses = filterByWeaknesses;
 window.displayData = displayData;
 window.sortPoke = sortPoke;
 window.sortSpawns = sortSpawns;
+window.filterEgg = filterEgg;
