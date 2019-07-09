@@ -192,6 +192,34 @@ btn5.addEventListener('click', () => {
   displayPokemon.innerHTML = null;
   displayData(sortSpawns(filteredArray, 'avgdown'));
 });
+let result = [];
+btn2km.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  result = filterEgg(pokemons, '2 km');
+  displayData(result);
+  header.innerHTML = `Pokemones que nacen de huevos de 2Km corresponden al &nbsp; ${((result.length) / 151 * 100).toFixed(2)}% de la region Kanto`;
+});
+btn5km.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  header.innerHTML = null;
+  result = filterEgg(pokemons, '5 km');
+  displayData(result);
+  header.innerHTML = `Pokemones que nacen de huevos de 5Km corresponden al &nbsp; ${((result.length) / 151 * 100).toFixed(2)}% de la region Kanto`;
+});
+btn10km.addEventListener('click', () => {
+  displayPokemon.innerHTML = null;
+  header.innerHTML = null;
+  result = filterEgg(pokemons, '10 km');
+  displayData(result);
+  header.innerHTML = `Pokemones que nacen de huevos de 10Km corresponden al &nbsp; ${((result.length) / 151 * 100).toFixed(2)}% de la region Kanto`;
+});
+notInEggs.addEventListener('click', () =>{
+  displayPokemon.innerHTML = null;
+  header.innerHTML = null;
+  result = filterEgg(filteredArray, 'Not in Eggs');
+  displayData(result); 
+  header.innerHTML = `Pokemones que no nacen de huevos corresponden al &nbsp; ${((result.length) / 151 * 100).toFixed(2)}% de la region Kanto`;
+});
 
 home.addEventListener('click', () => {
   card.classList.add('hide');
