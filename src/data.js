@@ -79,14 +79,14 @@ const filterEgg = (data, kms) => {
 
 const filterByTypes = (condition) => {
   filteredArray = [];
-pokemons.forEach(poke => {
-  for (let i = 0; i < poke.type.length; i++) {
-    if (poke.type[i] === condition) {
-      filteredArray.push(poke); 
+  pokemons.forEach(poke => {
+    for (let i = 0; i < poke.type.length; i++) {
+      if (poke.type[i] === condition) {
+        filteredArray.push(poke); 
+      } 
     } 
-  } 
- })                          
-return filteredArray;
+  });                          
+  return filteredArray;
 };
 
 const filterByWeaknesses = (condition) =>{
@@ -97,7 +97,7 @@ const filterByWeaknesses = (condition) =>{
         filteredArray.push(poke); 
       } 
     } 
-   })                          
+  });                          
   return filteredArray;
 };
 

@@ -11,7 +11,7 @@ const header = document.getElementById('header');
 const displayPokemon = document.getElementsByClassName('my-pokemon-pics')[0];
 const card = document.getElementById('card');
 const home = document.getElementById('home');
-//Acceso - Login
+
 const loginAccess = () => {
   const password = document.getElementById('password').value;
   const email = document.getElementById('email').value;
