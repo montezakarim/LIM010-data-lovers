@@ -27,110 +27,6 @@ const displayData = (dataToPrint) => {
   return dataToPrint;
 }; 
 
-const filterByTypes = (typeString) =>{
-  filteredArray = pokemons.filter(poke => {
-    const types = poke.type;
-    const searched = types.find(type =>{
-      switch (typeString) {
-      case 'Bug':
-        return type === 'Bug';
-      case 'Dark':
-        return type === 'Dark';
-      case 'Dragon':
-        return type === 'Dragon';
-      case 'Electric':
-        return type === 'Electric';
-      case 'Fairy':
-        return type === 'Fairy';
-      case 'Fighting':
-        return type === 'Fighting';
-      case 'Fire':
-        return type === 'Fire';
-      case 'Flying':
-        return type === 'Flying';
-      case 'Ghost':
-        return type === 'Ghost';
-      case 'Grass':
-        return type === 'Grass';
-      case 'Ground':
-        return type === 'Ground';
-      case 'Ice':
-        return type === 'Ice';
-      case 'Normal':
-        return type === 'Normal';
-      case 'Poison':
-        return type === 'Poison';
-      case 'Psychic':
-        return type === 'Psychic';
-      case 'Rock':
-        return type === 'Rock';
-      case 'Steel':
-        return type === 'Steel';
-      case 'Water':
-        return type === 'Water';
-      default:
-        break;
-      }
-    });
-    if (searched) {
-      return poke;
-    }
-  });
-  return filteredArray;
-};
-
-const filterByWeaknesses = (typeString) =>{
-  filteredArray = pokemons.filter(poke => {
-    const weakness = poke.weaknesses;
-    const searched = weakness.find(type =>{
-      switch (typeString) {
-      case 'Bug':
-        return type === 'Bug';
-      case 'Dark':
-        return type === 'Dark';
-      case 'Dragon':
-        return type === 'Dragon';
-      case 'Electric':
-        return type === 'Electric';
-      case 'Fairy':
-        return type === 'Fairy';
-      case 'Fighting':
-        return type === 'Fighting';
-      case 'Fire':
-        return type === 'Fire';
-      case 'Flying':
-        return type === 'Flying';
-      case 'Ghost':
-        return type === 'Ghost';
-      case 'Grass':
-        return type === 'Grass';
-      case 'Ground':
-        return type === 'Ground';
-      case 'Ice':
-        return type === 'Ice';
-      case 'Normal':
-        return type === 'Normal';
-      case 'Poison':
-        return type === 'Poison';
-      case 'Psychic':
-        return type === 'Psychic';
-      case 'Rock':
-        return type === 'Rock';
-      case 'Steel':
-        return type === 'Steel';
-      case 'Water':
-        return type === 'Water';
-      default:
-        break;
-      }
-    });
-    if (searched) {
-      return poke;
-    }
-  });
-  return filteredArray;
-};
-
 const sortPoke = (data, sortOrder) => {
   const arrSortName = data.slice().sort((aa, bb) => {
     if (aa.name > bb.name) {
@@ -179,6 +75,30 @@ const filterEgg = (data, kms) => {
     egg = data.filter(poke => (poke.egg === 'Not in Eggs'));
   }
   return egg;
+};
+
+const filterByTypes = (condition) => {
+  filteredArray = [];
+pokemons.forEach(poke => {
+  for (let i = 0; i < poke.type.length; i++) {
+    if (poke.type[i] === condition) {
+      filteredArray.push(poke); 
+    } 
+  } 
+ })                          
+return filteredArray;
+};
+
+const filterByWeaknesses = (condition) =>{
+  filteredArray = [];
+  pokemons.forEach(poke => {
+    for (let i = 0; i < poke.weaknesses.length; i++) {
+      if (poke.weaknesses[i] === condition) {
+        filteredArray.push(poke); 
+      } 
+    } 
+   })                          
+  return filteredArray;
 };
 
 window.filterByTypes = filterByTypes;

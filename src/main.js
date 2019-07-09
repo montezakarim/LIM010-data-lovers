@@ -3,8 +3,6 @@ const pokemons = arrayPokemon.map((poke)=>{
   return poke;
 });
 let filteredArray = pokemons;
-
-
 const btnLogin = document.getElementById('btn-login');
 const loginInput = document.getElementsByClassName('login-input')[0];
 const formLogin = document.getElementById('login');
@@ -13,7 +11,7 @@ const header = document.getElementById('header');
 const displayPokemon = document.getElementsByClassName('my-pokemon-pics')[0];
 const card = document.getElementById('card');
 const home = document.getElementById('home');
-
+//Acceso - Login
 const loginAccess = () => {
   const password = document.getElementById('password').value;
   const email = document.getElementById('email').value;
@@ -27,8 +25,8 @@ const loginAccess = () => {
     message.innerHTML = 'Usuario o password incorrectos';
   };
 };
-
 btnLogin.addEventListener('click', loginAccess);
+
 
 bug.addEventListener('click', () => {
   displayPokemon.innerHTML = null;
@@ -229,7 +227,6 @@ home.addEventListener('click', () => {
   filteredArray = pokemons;
   displayData(filteredArray);
 });
-
 const showCard = (idPoke) => {
   displayPokemon.classList.add('hide');
   classContenedor1.classList.add('hide');
