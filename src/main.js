@@ -3,8 +3,6 @@ const pokemons = arrayPokemon.map((poke)=>{
   return poke;
 });
 let filteredArray = pokemons;
-
-
 const btnLogin = document.getElementById('btn-login');
 const loginInput = document.getElementsByClassName('login-input')[0];
 const formLogin = document.getElementById('login');
@@ -13,7 +11,7 @@ const header = document.getElementById('header');
 const displayPokemon = document.getElementsByClassName('my-pokemon-pics')[0];
 const card = document.getElementById('card');
 const home = document.getElementById('home');
-
+//Acceso - Login
 const loginAccess = () => {
   const password = document.getElementById('password').value;
   const email = document.getElementById('email').value;
@@ -27,8 +25,8 @@ const loginAccess = () => {
     message.innerHTML = 'Usuario o password incorrectos';
   };
 };
-
 btnLogin.addEventListener('click', loginAccess);
+
 
 bug.addEventListener('click', () => {
   displayPokemon.innerHTML = null;
@@ -229,3 +227,54 @@ home.addEventListener('click', () => {
   filteredArray = pokemons;
   displayData(filteredArray);
 });
+// mostrar cartilla Pokemon
+const showCard = (idPoke) => {
+  displayPokemon.classList.add('hide');
+  classContenedor1.classList.add('hide');
+  classContenedor2.classList.add('hide');
+  classContenedor3.classList.add('hide');
+  classContenedor4.classList.add('hide');
+  header.classList.add('hide');
+  card.classList.remove('hide');
+  pokemons.forEach(poke =>{ 
+    if (parseInt(idPoke) === poke.id) {
+      card.innerHTML = `
+      <img class="cardImg" src="${poke.img}" alt="${poke.name}" >
+      <aside class="characteristics">
+      <h2>${poke.name}</h2>
+      <aside class="pokedex">
+        <div>
+        <p> #: ${poke.num}</p>
+        </div>
+        <div>
+        <p>peso: ${poke.weight}</p>
+        </div>
+        <div>
+        <p>talla: ${poke.height}</p>
+        </div>
+      </aside>
+      <aside class="type-size">
+        <div>
+          <p>tipo:</p>
+          <divclass="type-card">
+          <img class"size-img" src="img/${poke.type[0]}.png" alt="${poke.type[0]}" >
+          <img class"size-img" src="img/${poke.type[1]}.png" alt="${poke.type[1]}" >
+          <img class"size-img" src="img/${poke.type[2]}.png" alt="${poke.type[2]}" >
+          <img class"size-img" src="img/${poke.type[3]}.png" alt="${poke.type[3]}" >
+          </div>
+        </div>
+        <div>
+          <p>debilidad:</p>
+          <div>
+          <img class"size-img" src="img/${poke.weaknesses[0]}.png" alt="${poke.weaknesses[0]}" >
+          <img class"size-img" src="img/${poke.weaknesses[1]}.png" alt="${poke.weaknesses[1]}" >
+          <img class"size-img" src="img/${poke.weaknesses[2]}.png" alt="${poke.weaknesses[2]}" >
+          <img class"size-img" src="img/${poke.weaknesses[3]}.png" alt="${poke.weaknesses[3]}" >
+          </div>
+        </div>
+      </aside>
+    </aside>      
+      `;
+    }
+  });
+};

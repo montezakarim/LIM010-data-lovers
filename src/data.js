@@ -1,53 +1,3 @@
-const showCard = (idPoke) => {
-  displayPokemon.classList.add('hide');
-  classContenedor1.classList.add('hide');
-  classContenedor2.classList.add('hide');
-  classContenedor3.classList.add('hide');
-  classContenedor4.classList.add('hide');
-  header.classList.add('hide');
-  card.classList.remove('hide');
-  pokemons.forEach(poke =>{ 
-    if (parseInt(idPoke) === poke.id) {
-      card.innerHTML = `
-      <img class="cardImg" src="${poke.img}" alt="${poke.name}" >
-      <aside class="characteristics">
-      <h2>${poke.name}</h2>
-      <aside class="pokedex">
-        <div>
-        <p> #: ${poke.num}</p>
-        </div>
-        <div>
-        <p>peso: ${poke.weight}</p>
-        </div>
-        <div>
-        <p>talla: ${poke.height}</p>
-        </div>
-      </aside>
-      <aside class="type-size">
-        <div>
-          <p>tipo:</p>
-          <divclass="type-card">
-          <img class"size-img" src="img/${poke.type[0]}.png" alt="${poke.type[0]}" >
-          <img class"size-img" src="img/${poke.type[1]}.png" alt="${poke.type[1]}" >
-          <img class"size-img" src="img/${poke.type[2]}.png" alt="${poke.type[2]}" >
-          <img class"size-img" src="img/${poke.type[3]}.png" alt="${poke.type[3]}" >
-          </div>
-        </div>
-        <div>
-          <p>debilidad:</p>
-          <div>
-          <img class"size-img" src="img/${poke.weaknesses[0]}.png" alt="${poke.weaknesses[0]}" >
-          <img class"size-img" src="img/${poke.weaknesses[1]}.png" alt="${poke.weaknesses[1]}" >
-          <img class"size-img" src="img/${poke.weaknesses[2]}.png" alt="${poke.weaknesses[2]}" >
-          <img class"size-img" src="img/${poke.weaknesses[3]}.png" alt="${poke.weaknesses[3]}" >
-          </div>
-        </div>
-      </aside>
-    </aside>      
-      `;
-    }
-  });
-};
 // asignar variable para que imprima lo que entre----------------------------------------------------------
 const displayData = (dataToPrint) => {
   let noPokemons = 0;
@@ -87,110 +37,6 @@ const displayData = (dataToPrint) => {
   home.classList.remove('hide'); 
   return dataToPrint;
 }; 
-
-const filterByTypes = (typeString) =>{
-  filteredArray = pokemons.filter(poke => {
-    const types = poke.type;
-    const searched = types.find(type =>{
-      switch (typeString) {
-      case 'Bug':
-        return type === 'Bug';
-      case 'Dark':
-        return type === 'Dark';
-      case 'Dragon':
-        return type === 'Dragon';
-      case 'Electric':
-        return type === 'Electric';
-      case 'Fairy':
-        return type === 'Fairy';
-      case 'Fighting':
-        return type === 'Fighting';
-      case 'Fire':
-        return type === 'Fire';
-      case 'Flying':
-        return type === 'Flying';
-      case 'Ghost':
-        return type === 'Ghost';
-      case 'Grass':
-        return type === 'Grass';
-      case 'Ground':
-        return type === 'Ground';
-      case 'Ice':
-        return type === 'Ice';
-      case 'Normal':
-        return type === 'Normal';
-      case 'Poison':
-        return type === 'Poison';
-      case 'Psychic':
-        return type === 'Psychic';
-      case 'Rock':
-        return type === 'Rock';
-      case 'Steel':
-        return type === 'Steel';
-      case 'Water':
-        return type === 'Water';
-      default:
-        break;
-      }
-    });
-    if (searched) {
-      return poke;
-    }
-  });
-  return filteredArray;
-};
-
-const filterByWeaknesses = (typeString) =>{
-  filteredArray = pokemons.filter(poke => {
-    const weakness = poke.weaknesses;
-    const searched = weakness.find(type =>{
-      switch (typeString) {
-      case 'Bug':
-        return type === 'Bug';
-      case 'Dark':
-        return type === 'Dark';
-      case 'Dragon':
-        return type === 'Dragon';
-      case 'Electric':
-        return type === 'Electric';
-      case 'Fairy':
-        return type === 'Fairy';
-      case 'Fighting':
-        return type === 'Fighting';
-      case 'Fire':
-        return type === 'Fire';
-      case 'Flying':
-        return type === 'Flying';
-      case 'Ghost':
-        return type === 'Ghost';
-      case 'Grass':
-        return type === 'Grass';
-      case 'Ground':
-        return type === 'Ground';
-      case 'Ice':
-        return type === 'Ice';
-      case 'Normal':
-        return type === 'Normal';
-      case 'Poison':
-        return type === 'Poison';
-      case 'Psychic':
-        return type === 'Psychic';
-      case 'Rock':
-        return type === 'Rock';
-      case 'Steel':
-        return type === 'Steel';
-      case 'Water':
-        return type === 'Water';
-      default:
-        break;
-      }
-    });
-    if (searched) {
-      return poke;
-    }
-  });
-  return filteredArray;
-};
 
 const sortPoke = (data, sortOrder) => {
   const arrSortName = data.slice().sort((aa, bb) => {
@@ -240,6 +86,30 @@ const filterEgg = (data, kms) => {
     egg = data.filter(poke => (poke.egg === 'Not in Eggs'));
   }
   return egg;
+};
+
+const filterByTypes = (condition) => {
+  filteredArray = [];
+pokemons.forEach(poke => {
+  for (let i = 0; i < poke.type.length; i++) {
+    if (poke.type[i] === condition) {
+      filteredArray.push(poke); 
+    } 
+  } 
+ })                          
+return filteredArray;
+};
+
+const filterByWeaknesses = (condition) =>{
+  filteredArray = [];
+  pokemons.forEach(poke => {
+    for (let i = 0; i < poke.weaknesses.length; i++) {
+      if (poke.weaknesses[i] === condition) {
+        filteredArray.push(poke); 
+      } 
+    } 
+   })                          
+  return filteredArray;
 };
 
 window.filterByTypes = filterByTypes;
