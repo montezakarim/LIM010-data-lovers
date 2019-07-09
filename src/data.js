@@ -1,25 +1,13 @@
-// asignar variable para que imprima lo que entre----------------------------------------------------------
 const displayData = (dataToPrint) => {
-  let noPokemons = 0;
-  let thePokemons = 0;
+  let noPokemons = [];
+  let thePokemons = [];
   dataToPrint.forEach((poke)=>{
     if (poke.multipliers === null) {
-      displayPokemon.innerHTML += `
-        <figure class="wp-caption">
-        <input class="pokePic untrapped" name="${poke.name}" id="${poke.id}" type="image" src="${poke.img}" alt="${poke.name}">
-        <img class="type_background" src="img/Type_Background_${poke.type[0]}.png" alt="Type_Background_${poke.type[0]}.png">
-        <figcaption class="wp-caption-text" type="button">${poke.name} 0</figcaption>
-        </figure>`;
-      noPokemons ++;
+      noPokemons += poke;
       return noPokemons;
     } else {
-      displayPokemon.innerHTML += `
-        <figure class="wp-caption">
-        <input class="pokePic" name="${poke.name}" id="${poke.id}" type="image" src="${poke.img}" alt="${poke.name}">
-        <img class="type_background" src="img/Type_Background_${poke.type[0]}.png" alt="Type_Background_${poke.type[0]}.png">
-        <figcaption class="wp-caption-text" type="button">${poke.name} ${poke.multipliers.length}</figcaption>
-        </figure> `;
-      thePokemons ++;
+      thePokemons += poke;
+      return thePokemons;
     };
   });
   const parentNav = document.querySelectorAll('nav')[0];
@@ -29,12 +17,13 @@ const displayData = (dataToPrint) => {
   };
   parentNav.addEventListener('click', getId);
   header.innerHTML = `
-    <h2>Total atrapados: ${thePokemons} &nbsp; &nbsp; Por atrapar: ${noPokemons}</h2>`;
+    <h2>Total atrapados: ${thePokemons.length / 15} &nbsp; &nbsp; Por atrapar: ${noPokemons.length / 15}</h2>`;
   classContenedor1.classList.remove('hide'); 
   classContenedor2.classList.remove('hide'); 
   classContenedor3.classList.remove('hide'); 
   classContenedor4.classList.remove('hide'); 
   home.classList.remove('hide'); 
+  showDisplay(dataToPrint);
   return dataToPrint;
 }; 
 
