@@ -229,3 +229,74 @@ home.addEventListener('click', () => {
   filteredArray = pokemons;
   displayData(filteredArray);
 });
+
+const showCard = (idPoke) => {
+  displayPokemon.classList.add('hide');
+  classContenedor1.classList.add('hide');
+  classContenedor2.classList.add('hide');
+  classContenedor3.classList.add('hide');
+  classContenedor4.classList.add('hide');
+  header.classList.add('hide');
+  card.classList.remove('hide');
+  pokemons.forEach(poke =>{ 
+    if (parseInt(idPoke) === poke.id) {
+      card.innerHTML = `
+      <img class="cardImg" src="${poke.img}" alt="${poke.name}" >
+      <aside class="characteristics">
+      <h2>${poke.name}</h2>
+      <aside class="pokedex">
+        <div>
+        <p> #: ${poke.num}</p>
+        </div>
+        <div>
+        <p>peso: ${poke.weight}</p>
+        </div>
+        <div>
+        <p>talla: ${poke.height}</p>
+        </div>
+      </aside>
+      <aside class="type-size">
+        <div>
+          <p>tipo:</p>
+          <divclass="type-card">
+          <img class"size-img" src="img/${poke.type[0]}.png" alt="${poke.type[0]}" >
+          <img class"size-img" src="img/${poke.type[1]}.png" alt="${poke.type[1]}" >
+          <img class"size-img" src="img/${poke.type[2]}.png" alt="${poke.type[2]}" >
+          <img class"size-img" src="img/${poke.type[3]}.png" alt="${poke.type[3]}" >
+          </div>
+        </div>
+        <div>
+          <p>debilidad:</p>
+          <div>
+          <img class"size-img" src="img/${poke.weaknesses[0]}.png" alt="${poke.weaknesses[0]}" >
+          <img class"size-img" src="img/${poke.weaknesses[1]}.png" alt="${poke.weaknesses[1]}" >
+          <img class"size-img" src="img/${poke.weaknesses[2]}.png" alt="${poke.weaknesses[2]}" >
+          <img class"size-img" src="img/${poke.weaknesses[3]}.png" alt="${poke.weaknesses[3]}" >
+          </div>
+        </div>
+      </aside>
+    </aside>      
+      `;
+    }
+  });
+};
+
+const showDisplay = (arrayToPrint) =>{
+  arrayToPrint.forEach(poke =>{
+    if (poke.multipliers === null) {
+      displayPokemon.innerHTML += `
+        <figure class="wp-caption">
+        <input class="pokePic untrapped" name="${poke.name}" id="${poke.id}" type="image" src="${poke.img}" alt="${poke.name}">
+        <img class="type_background" src="img/Type_Background_${poke.type[0]}.png" alt="Type_Background_${poke.type[0]}.png">
+        <figcaption class="wp-caption-text" type="button">${poke.name} 0</figcaption>
+        </figure>`;
+    } else {
+      displayPokemon.innerHTML += `
+      <figure class="wp-caption">
+      <input class="pokePic" name="${poke.name}" id="${poke.id}" type="image" src="${poke.img}" alt="${poke.name}">
+      <img class="type_background" src="img/Type_Background_${poke.type[0]}.png" alt="Type_Background_${poke.type[0]}.png">
+      <figcaption class="wp-caption-text" type="button">${poke.name} ${poke.multipliers.length}</figcaption>
+      </figure> `;
+    };
+  });
+};

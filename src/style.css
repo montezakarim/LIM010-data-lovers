@@ -26,6 +26,7 @@ header{
   height: 64px;
   position: fixed;
   z-index: 5;
+  text-align: center;
 }
 
 main{
@@ -505,22 +506,22 @@ body > nav {
 }
 
 .card{
-  display: grid;
+  display: flex;
+  flex-direction: column;
   height: 82vh;
   margin: 5vh;
   width: 50vh;
   background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 30px;
+  border-radius: 25px;
 }
 .cardImg {
-  display:grid;
-  width:40vw;
+  width: 46vw;
   margin: 1em auto 0em;
   border-bottom: solid greenyellow;
   border-right: solid greenyellow;
   border-width: 0.5em;
   border-radius: 50%;
-  padding: 2em;
+  /* padding: 2em; */
   background-color: white;
 }
 .characteristics{
