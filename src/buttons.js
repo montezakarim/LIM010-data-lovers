@@ -13,7 +13,7 @@ const btnh = document.getElementById('btnh');
 const btn2km = document.getElementById('btn2km');
 const btn5km = document.getElementById('btn5km');
 const btn10km = document.getElementById('btn10km');
-const notInEggs = document.getElementById('notInEggs');
+const notInEggs = document.getElementById('not-in-eggs');
 
 const types = document.getElementById('types');
 const bug = document.getElementById('bug');
