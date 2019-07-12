@@ -2,8 +2,5 @@
   "env": {
     "node": true,
     "jest": true
-  },
-  "globals": {
-    "assert": false
   }
 }
