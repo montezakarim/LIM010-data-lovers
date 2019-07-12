@@ -16,26 +16,8 @@
     "htmlhint": "^0.10.1"
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "jest": "^24.8.0"
-  },
-  "description": "<p align=\"center\">\r  <img src=\"src/img/pgo_logo.png\">\r </p>",
-  "directories": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/montezakarim/LIM010-data-lovers.git"
-  },
-  "author": "",
-  "bugs": {
-    "url": "https://github.com/montezakarim/LIM010-data-lovers/issues"
-  },
-  "homepage": "https://github.com/montezakarim/LIM010-data-lovers#readme"
-=======
     "jest": "^24.8.0",
     "mocha": "^5.2.0"
   }
   
->>>>>>> b8ffa387d0a2bc3fcf871ea9be0752fb3991331e
 }
