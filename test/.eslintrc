@@ -1,6 +1,13 @@
 {
   "env": {
     "node": true,
+<<<<<<< HEAD
     "jest": true
+=======
+    "jest": true,
+  },
+  "globals": {
+    "assert": false
+>>>>>>> b8ffa387d0a2bc3fcf871ea9be0752fb3991331e
   }
 }
