@@ -17,7 +17,7 @@ const home = document.getElementById('home');
 const loginAccess = () => {
   const password = document.getElementById('password').value;
   const email = document.getElementById('email').value;
-  if (email === 'LABORATORIA' && password === 'LABORATORIA') {
+  if (email === '' && password === '') {
     formLogin.classList.add('hide');
     loginInput.classList.add('hide');
     document.body.style.backgroundImage = 'url("img/fondop3.jpg")';
@@ -248,7 +248,7 @@ const showCard = (idPoke) => {
     if (parseInt(idPoke) === poke.id) {
       card.innerHTML = `
       <img class="cardImg" src="${poke.img}" alt="${poke.name}" >
-      <aside class="characteristics">
+      <aside class="characteristics column center">
       <h2>${poke.name}</h2>
       <aside class="pokedex">
         <div>
@@ -293,7 +293,7 @@ const showDisplay = (arrayToPrint) =>{
   arrayToPrint.forEach(poke =>{
     if (poke.multipliers === null) {
       displayPokemon.innerHTML += `
-        <figure class="wp-caption">
+        <figure class="wp-caption wrap margin-auto">
         <input class="pokePic untrapped" name="${poke.name}" id="${poke.id}" type="image" src="${poke.img}" alt="${poke.name}">
         <img class="type_background" src="img/Type_Background_${poke.type[0]}.png" alt="Type_Background_${poke.type[0]}.png">
         <figcaption class="wp-caption-text" type="button">${poke.name} 0</figcaption>
@@ -302,7 +302,7 @@ const showDisplay = (arrayToPrint) =>{
       return noPokemons;
     } else {
       displayPokemon.innerHTML += `
-      <figure class="wp-caption">
+      <figure class="wp-caption wrap margin-auto">
       <input class="pokePic" name="${poke.name}" id="${poke.id}" type="image" src="${poke.img}" alt="${poke.name}">
       <img class="type_background" src="img/Type_Background_${poke.type[0]}.png" alt="Type_Background_${poke.type[0]}.png">
       <figcaption class="wp-caption-text" type="button">${poke.name} ${poke.multipliers.length}</figcaption>

@@ -1,51 +1,51 @@
 *{
   outline: none;
 }
-
-
 body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  background-size: cover;
   background-image: url(http://media-s3-us-east-1.ceros.com/hype-beast/images/2018/07/13/a9a51bc0b8d626db493ab5f9a971b043/background-hero.png);
 }
-
-html, body, header {
-  
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  flex-wrap: wrap;
-}
-
 header{
   color:#ffffff;
   font-family:calibri;
   font-size: 15px;
   height: 64px;
-  position: fixed;
   z-index: 5;
   text-align: center;
 }
-
 main{
   height: 100%;
   display: flex;
 }
-
 /* login---------------------------------------------------------------------------------------------- */
-
-.login {
+.margin-auto{
+  margin: auto;
+}
+.fixed{
+  position: fixed;
+}
+.wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.column{
   display: flex;
   flex-direction: column;
+}
+.center{
+  display: flex;
+  align-items: center;
+}
+.login {
   outline: none;
   background-color: #504040;
   width: 375px;
   height: 667px;
   color: #ffffff;
 }
-
 .pokePic {
   width: 32%;
   margin: 1em auto 1em;
@@ -57,25 +57,20 @@ main{
 .untrapped{
   filter: brightness(0);
 }
-
 .login-input {
   margin: 1.5em auto;
-  display: flex;
-  flex-direction: column;
   width: 335px;
   height: 210px;
   font-size: 17px;
   line-height: 35px;
   font-family: calibri;
 }
-
 .user{
   border-radius:4px;
   padding: 14px;
   height: 35px;
   font-size: 16px;
 }
-
 .btn-login{
   background-color: #2C97C1;
   border-color: #2C97C1;
@@ -85,59 +80,42 @@ main{
   height: 45px;
   border-radius: 4px;
 }
-
 #message {
   align-self: center;
 }
-
 .register{
   align-self: center;
 }
-
 .forgot-password{
   text-align: right;
   margin: 0.4em;
   }
-/* display ---------------------------------------------------------------------------------------------*/
 nav{
   margin-top: 48px;
-  display:flex;
-  flex-wrap: wrap;
 }
-
 input[type="image" i]{
   width: 100%;
   border-bottom: solid greenyellow;
   border-radius: 50%;
 }
-
 .wp-caption:hover{
   transform: scale(1.3);
   transition:.5s;
 }
-
 .wp-caption:hover{
-   /* background-color:rgb(161,249,255,0.6); */
    border-radius: 50%;
 }
-
 .wp-caption {
   position: relative;
   padding: 0px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
   width: 26%;
-  justify-content: center;
   background-image: none;
   }
-
 .wp-caption img {
   display: block;
   max-width: 100%;
   height: auto;
   }
-
 .wp-caption-text {
   opacity: 0;
   position: absolute;
@@ -154,24 +132,20 @@ input[type="image" i]{
   font-family: calibri;
   border-radius: 50%;
   }
-
 .wp-caption:hover .wp-caption-text {
   opacity: 1;
   text-align: center;
   }
-
 .type_background{
   display: inline;
   position: absolute;
   border-radius: 50%;
   z-index: -1;
 }
-
 /* botones pokebola-------------------------------------------------------------------------------- */
 .contenedor1{
   width: 70px;
   height: 245px;
-  position:fixed;
   right: 0px;
   bottom:0px;
   z-index: 6;
@@ -179,9 +153,7 @@ input[type="image" i]{
 .boton1{
   width: 50px;
   height: 50px;
-  border-radius:100%;
   background-image: url(img/pokeball.png);
-  background-size: cover;
   right:0;
   bottom:0;
   position: absolute;
@@ -194,14 +166,9 @@ input[type="image" i]{
   transition:.3s;
   z-index: 6;
 }
-
-.boton1:active{
-  transform:scale(1.1);
-}
 .btn{
   width:40px;
   height:40px;
-  border-radius:100%;
   border:none;
   color:#FFF;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -212,78 +179,62 @@ input[type="image" i]{
   margin-right:26px;
   transform:scale(0);
 }
-.boton2{
+.ordenar1{
   background:#FF0000;
-  margin-bottom: 70px;
   margin-right: 18px;
+}
+.boton2{
+  margin-bottom: 70px;
   transition:0.5s;
   border:solid #000000;
 }
 .boton3{
-  background:#FF0000;
   margin-bottom: 114px;
-  margin-right: 18px;
   transition:0.7s;
   border: solid #FFFFFF;
 }
 .boton4{
-  background:#FF0000;
   margin-bottom: 158px;
-  margin-right: 18px;
   transition:0.9s;
   border:solid #000000;
 }
 .boton5{
-  background:#FF0000;
   margin-bottom: 203px;
-  margin-right: 18px;
   transition:0.9s;
   border: solid #FFFFFF;
 }
 .animacionVer{
   transform:scale(1);
 }
-
 /* boton home------------------------------------------------------------------------------------------ */
-
 .home{
   background-image: url(img/inicio.png);
   background-size:cover;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
   border:none;
   color:#FFF;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  position:fixed;
   left: 0;
   bottom:0;
   margin-left: 12px;
   margin-bottom: 16px;
   z-index: 6;
 }
-.home:active{
-  transform:scale(1.1);
-}
-
 /* botones huevo ------------------------------------------------------------------------------------- */
 .contenedor2{
   width: 70px;
   height: 200px;
-  position: fixed;
   right: 66px;
   bottom:0px;
   z-index: 7;
 }
-
 .boton-huevo{
   width: 50px;
   height: 50px;
-  border-radius:100%;
   right:0;
   bottom:0;
   background-image: url(img/huevo.png);
-  background-size: cover;
   position:absolute;
   margin-right: 6px;
   margin-bottom:16px;
@@ -292,18 +243,12 @@ input[type="image" i]{
   transition:.3s;
   z-index: 7;
 }
-
-.boton-huevo:active{
-  transform:scale(1.1);
-}
-
 .boton2km{
   background:rgb(21, 180, 87);
   margin-bottom: 70px;
   margin-right: 13px;
   transition:0.5s;
   background-image: url(img/2km.png);
-  background-size: cover;
 }
 .boton5km{
   background:rgb(243, 175, 27);
@@ -311,7 +256,6 @@ input[type="image" i]{
   margin-right: 13px;
   transition:0.7s;
   background-image: url(img/5km.png);
-  background-size: cover;
 }
 .boton10km{
   background:#a025be;
@@ -319,33 +263,27 @@ input[type="image" i]{
   margin-right: 13px;
   transition:0.9s;
   background-image: url(img/10km.png);
-  background-size: cover;
 }
 .not-in-eggs{
   background-image: url(img/huevo.png);
-  background-size: cover;
   position:absolute;
   margin-bottom: 204px;
   margin-right: 13px;
   transition:0.9s;
   filter: brightness(0.5);
   border: solid red;
-
 }
-
 /* botones tipo ------------------------------------------------------------------------------------- */
 .contenedor3{
-    width: 160px;
-    height: 356px;
-    position:fixed;
-    left: 4.5em;
-    bottom:0px;
-    z-index: 6;
+  width: 160px;
+  height: 356px;
+  left: 4.5em;
+  bottom:0px;
+  z-index: 6;
 }
 .contenedor4{
   width: 160px;
   height: 356px;
-  position:fixed;
   left: 10em;
   bottom:0px;
   z-index: 6;
@@ -365,149 +303,123 @@ input[type="image" i]{
   transition:.3s;
   z-index: 6;
 }
-
-.types:active{
-  transform:scale(1.1);
-}
-
 .bug{
   margin-bottom: 60px;
-  margin-right: 0px;
   transition:0.5s;
   background-image: url(img/Bug.png);
-  background-size: cover;
 }
 .dark{
   margin-bottom: 105px;
-  margin-right: 0px;
   transition:0.7s;
   background-image: url(img/Dark.png);
-  background-size: cover;
-}
+ }
 .dragon{
   margin-bottom: 150px;
-  margin-right: 0px;
   transition:0.9s;
   background-image: url(img/Dragon.png);
-  background-size: cover;
 }
 .electric{
   margin-bottom: 195px;
-  margin-right: 0px;
   transition:1.1s;
   background-image: url(img/Electric.png);
-  background-size: cover;
 }
 .fairy{
   margin-bottom: 240px;
   transition:1.3s;
-  margin-right: 0px;
   background-image: url(img/Fairy.png);
-  background-size: cover;
 }
 .fighting{
   margin-bottom: 285px;
-  margin-right: 0px;
   transition:1.5s;
   background-image: url(img/Fighting.png);
-  background-size: cover;
   }
 .fire{
   margin-bottom: 60px;
-  margin-right: 45px;
   transition:0.5s;
   background-image: url(img/Fire.png);
-  background-size: cover;
 }
 .flying{
   margin-bottom: 105px;
-  margin-right: 45px;
   transition:0.7s;
   background-image: url(img/Flying.png);
-  background-size: cover;
   }
 .ghost{
   margin-bottom: 150px;
-  margin-right: 45px;
   transition:0.9s;
   background-image: url(img/Ghost.png);
-  background-size: cover;
   }
 .grass{
   margin-bottom: 195px;
-  margin-right: 45px;
   transition:1.1s;
   background-image: url(img/Grass.png);
-  background-size: cover;
   }
 .ground{
   margin-bottom: 240px;
-  margin-right: 45px;
   transition:1.3s;
   background-image: url(img/Ground.png);
-  background-size: cover;
   }
 .ice{
   margin-bottom: 285px;
-  margin-right: 45px;
   transition:1.5s;
   background-image: url(img/Ice.png);
-  background-size: cover;
   }
 .normal{
   margin-bottom: 60px;
   margin-right: 90px;
   transition:0.5s;
   background-image: url(img/Normal.png);
-  background-size: cover;
   }
 .poison{
   margin-bottom: 105px;
   margin-right: 90px;
   transition:0.7s;
   background-image: url(img/Poison.png);
-  background-size: cover;
   }
 .psychic{
   margin-bottom: 150px;
   margin-right: 90px;
   transition:0.9s;
   background-image: url(img/Psychic.png);
-  background-size: cover;
   }
 .rock{
   margin-bottom: 195px;
   margin-right: 90px;
   transition:1.1s;
   background-image: url(img/Rock.png);
-  background-size: cover;
   }
 .steel{
   margin-bottom: 240px;
   margin-right: 90px;
   transition:1.3s;
   background-image: url(img/Steel.png);
-  background-size: cover;
   }
 .water{
   margin-bottom: 285px;
   margin-right: 90px;
   transition:1.5s;
   background-image: url(img/Water.png);
-  background-size: cover;
   }
- 
-
-/* display ---------------------------------------------------------------*/
+.active{
+  transform:scale(1.1);
+}
+.cover{
+  background-size: cover;
+}
+.m-right0{
+   margin-right: 0px;
+}
+.m-right45{
+  margin-right: 45px;
+}
+.radius100{
+  border-radius: 100%;
+ }
 body > nav {
   height: 100%;
   width: 100%;  
   color: #FFF;
 }
-
 .card{
-  display: flex;
-  flex-direction: column;
   height: 82vh;
   margin: 5vh;
   width: 50vh;
@@ -521,20 +433,14 @@ body > nav {
   border-right: solid greenyellow;
   border-width: 0.5em;
   border-radius: 50%;
-  /* padding: 2em; */
   background-color: white;
 }
 .characteristics{
   color: #FFFFFF;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: 284px;
 }
 .size-img{
   width: 20px;
 }
-
 .pokedex{
   display: flex;
   justify-content: space-evenly;
@@ -542,62 +448,51 @@ body > nav {
 }
 
 /* media query----------------------------------------------------------------------------- */
-@media only screen and (min-width: 768px){
-
+@media only screen and (min-width: 376px){
   html,body{
       
       background-size: cover;
       background-repeat: repeat-y;
       height: 100%;
   }
-
   header{
       font-size:25px;
       height: 77px;
       align-content: center;
   }
-
   input[type="image" i] {
   width: 75%;
   }
-
   .login {
   width: 536px;
   height: 501px;
   justify-content: center;
   align-self: center;
   }
-
   .pokePic, .logo {
       width: 25%;
   }
-
   .login-input {
       margin: 0.5em auto;
       height: 214px;
       inline-size: 367px;
   }
-
   .btn-login{
       inline-size: 157px;
       align-self: center;
   }
-
   .wp-caption {
       width: 15%;
       padding: 29px;
   }
-
   .wp-caption-text {
       font-size: 18px;
       padding: 0em;
   }
-
   .cardImg{
     width: 43%;
     margin-top: 3em;
   }
-
   .deb{
     margin-left: 130px;
     width: 85px;
@@ -608,10 +503,7 @@ body > nav {
     width: 85px;
     left: 13em;
   }
-  .home{
-    position: fixed;
-  }
-  }
   .hide{
     display: none;
   }
+}

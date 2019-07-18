@@ -1,148 +1,148 @@
 <!DOCTYPE html>
 
-<html lang="es">
+<html class="wrap margin-auto" lang="es">
 <head>
   <meta charset="utf-8">
   <title>Data Lovers P-Go</title>
   <link rel="stylesheet" href="style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-    <header id="header"></header>
+<body class="wrap cover margin-auto">
+    <header class="wrap  margin-auto fixed" id="header"></header>
     <main>
-        <section class="login" id="login">
+        <section class="login column" id="login">
             <img class="logo" src="img/pgo_logo.png" alt="pokemonGoLogo">
             <div>
-              <div class="login-input">
+              <div class="login-input column">
                 <label for="email">Correo electrónico:</label>
                 <input class="user" id="email" name="email" type="text">
                 <label for="password">Contraseña:</label>
                 <input class="user" id="password" name="password" type="password">
                 <p class="forgot-password"><b>¿Olvidaste tu contraseña?</b></p>				
               </div>
-                <div class="login-input">
+                <div class="login-input column">
                   <p id="message" class="hide"></p>
                   <button class="btn-login" id="btn-login"><b>INGRESA</b></button>
                   <p class="register">¿No tienes una cuenta?<b>Regístrate</b></p>
                 </div>   
             </div>
         </section>
-        <nav class="my-pokemon-pics" id="my-pokemon-pics"></nav>
-        <nav class="new-data" id="new-data"></nav>
+        <nav class="my-pokemon-pics wrap" id="my-pokemon-pics"></nav>
+        <nav class="new-data wrap" id="new-data"></nav>
         <aside>
-          <aside class="contenedor1 hide" id="contenedor1">
-            <button class="boton1" id="btn-pokeball">
+          <aside class="contenedor1 hide fixed" id="contenedor1">
+            <button class="boton1 cover radius100 active" id="btn-pokeball">
             </button>
-            <button class="btn boton2" id="btnza">
+            <button class="btn radius100 boton2 ordenar1" id="btnza">
               <span>Z-a</span>
             </button>
-            <button class="btn boton3" id="btnaz">
+            <button class="btn radius100 boton3 ordenar1" id="btnaz">
               <span>A-z</span>
             </button>
-            <button class="btn boton4" id="btnfup">
+            <button class="btn radius100 boton4 ordenar1" id="btnfup">
               <span>F &uarr;</span>
             </button>
-            <button class="btn boton5" id="btnfdown">
+            <button class="btn radius100 boton5 ordenar1" id="btnfdown">
               <span>F &darr;</span>
             </button>
           </aside>
-          <aside class="contenedor2 hide " id="contenedor2">
-            <button class="boton-huevo" id="btnh">
+          <aside class="contenedor2 hide fixed" id="contenedor2">
+            <button class="boton-huevo radius100 cover active" id="btnh">
             </button>
-            <button class="btn boton2km" id="btn2km">
+            <button class="btn radius100 boton2km cover" id="btn2km">
             </button>
-            <button class="btn boton5km" id="btn5km">
+            <button class="btn radius100 boton5km cover" id="btn5km">
             </button>
-            <button class="btn boton10km" id="btn10km">
+            <button class="btn radius100 boton10km cover" id="btn10km">
             </button>
-            <button class="btn not-in-eggs" id="not-in-eggs">
+            <button class="btn radius100 not-in-eggs cover" id="not-in-eggs">
             </button>
           </aside>
-          <aside class="contenedor3 typ hide" id="contenedor3">
-            <button class="types" id="types">
+          <aside class="contenedor3 typ hide fixed" id="contenedor3">
+            <button class="types active" id="types">
               <span>Tipos</span>
             </button>
-            <button class="btn bug" id="bug">
+            <button class="btn radius100 bug m-right0 cover" id="bug">
             </button>
-            <button class="btn dark" id="dark">
+            <button class="btn radius100 dark m-right0 cover" id="dark">
             </button>
-            <button class="btn dragon" id="dragon">
+            <button class="btn radius100 dragon m-right0 cover" id="dragon">
             </button>
-            <button class="btn electric" id="electric">
+            <button class="btn radius100 electric m-right0 cover" id="electric">
             </button>
-            <button class="btn fairy" id="fairy">
+            <button class="btn radius100 fairy m-right0 cover" id="fairy">
             </button>
-            <button class="btn fighting" id="fighting">
+            <button class="btn radius100 fighting m-right0 cover" id="fighting">
             </button>
-            <button class="btn fire" id="fire">
+            <button class="btn radius100 fire m-right45 cover" id="fire">
             </button>
-            <button class="btn flying" id="flying">
+            <button class="btn radius100 flying m-right45 cover" id="flying">
             </button>
-            <button class="btn ghost" id="ghost">
+            <button class="btn radius100 ghost m-right45 cover" id="ghost">
             </button>
-            <button class="btn grass" id="grass">
+            <button class="btn radius100 grass m-right45 cover" id="grass">
             </button>
-            <button class="btn ground" id="ground">
+            <button class="btn radius100 ground m-right45 cover" id="ground">
             </button>
-            <button class="btn ice" id="ice">
+            <button class="btn radius100 ice m-right45 cover" id="ice">
             </button>
-            <button class="btn normal" id="normal">
+            <button class="btn radius100 normal cover" id="normal">
             </button>
-            <button class="btn poison" id="poison">
+            <button class="btn radius100 poison cover" id="poison">
             </button>
-            <button class="btn psychic" id="psychic">
+            <button class="btn radius100 psychic cover" id="psychic">
             </button>
-            <button class="btn rock" id="rock">
+            <button class="btn radius100 rock cover" id="rock">
             </button>
-            <button class="btn steel" id="steel">
+            <button class="btn radius100 steel cover" id="steel">
             </button>
-            <button class="btn water" id="water">
+            <button class="btn radius100 water cover" id="water">
             </button>           
           </aside>
-          <aside class="contenedor4 deb hide" id="contenedor4">
+          <aside class="contenedor4 deb hide fixed" id="contenedor4">
             <button class="types" id="weakness">
               <span>Debilidades</span>
             </button>
-            <button class="btn bug" id="bugw">
+            <button class="btn radius100 bug m-right0 cover" id="bugw">
             </button>
-            <button class="btn dark" id="darkw">
+            <button class="btn radius100 dark m-right0 cover" id="darkw">
             </button>
-            <button class="btn dragon" id="dragonw">
+            <button class="btn radius100 dragon m-right0 cover" id="dragonw">
             </button>
-            <button class="btn electric" id="electricw">
+            <button class="btn radius100 electric m-right0 cover" id="electricw">
             </button>
-            <button class="btn fairy" id="fairyw">
+            <button class="btn radius100 fairy m-right0 cover" id="fairyw">
             </button>
-            <button class="btn fighting" id="fightingw">
+            <button class="btn radius100 fighting m-right0 cover" id="fightingw">
             </button>
-            <button class="btn fire" id="firew">
+            <button class="btn radius100 fire m-right45 cover" id="firew">
             </button>
-            <button class="btn flying" id="flyingw">
+            <button class="btn radius100 flying m-right45 cover" id="flyingw">
             </button>
-            <button class="btn ghost" id="ghostw">
+            <button class="btn radius100 ghost m-right45 cover" id="ghostw">
             </button>
-            <button class="btn grass" id="grassw">
+            <button class="btn radius100 grass m-right45 cover" id="grassw">
             </button>
-            <button class="btn ground" id="groundw">
+            <button class="btn radius100 ground m-right45 cover" id="groundw">
             </button>
-            <button class="btn ice" id="icew">
+            <button class="btn radius100 ice m-right45 cover" id="icew">
             </button>
-            <button class="btn normal" id="normalw">
+            <button class="btn radius100 normal cover" id="normalw">
             </button>
-            <button class="btn poison" id="poisonw">
+            <button class="btn radius100 poison cover" id="poisonw">
             </button>
-            <button class="btn psychic" id="psychicw">
+            <button class="btn radius100 psychic cover" id="psychicw">
             </button>
-            <button class="btn rock" id="rockw">
+            <button class="btn radius100 rock cover" id="rockw">
             </button>
-            <button class="btn steel" id="steelw">
+            <button class="btn radius100 steel cover" id="steelw">
             </button>
-            <button class="btn water" id="waterw">
+            <button class="btn radius100 water cover" id="waterw">
             </button>           
           </aside>
         </aside>
-        <section class="card hide" id="card"></section>
-        <button class="home hide" id="home"></button>
+        <section class="card hide column" id="card"></section>
+        <button class="home radius100 hide fixed active" id="home"></button>
     </main>
     <footer></footer>
     <script src="./data/pokemon/pokemon.js"></script>
