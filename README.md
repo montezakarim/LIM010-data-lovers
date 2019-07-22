@@ -36,8 +36,8 @@ Para nuestro proyecto **Data Lovers** del Common Core, hemos optado por el tema 
  Para utilizar el Demo deberán tener como usuario y contraseña _**LABORATORIA**_
 
  <p align="center">
-  <a href="https://zpl.io/boMyLqv">Zeplin Desktop</a> |
-  <a href="https://zpl.io/adXqNK1">Zeplin Mobile</a>
+  <a href="https://zpl.io/awOy1XN">Zeplin Desktop</a> |
+  <a href="https://zpl.io/VQQYyjR">Zeplin Mobile</a>
   <br>
   <img src="src/img/PGOLoginD.PNG">
   <br>
@@ -75,11 +75,11 @@ Para nuestro proyecto **Data Lovers** del Common Core, hemos optado por el tema 
  - *Imagen y link del prototipo de alta fidelidad final (mobile y desktop) en
    Figma.*
   <p align="center">
-  <a href="https://zpl.io/2GAY1zd">Zeplin Desktop</a>
+  <a href="https://zpl.io/2GWnoQr">Zeplin Desktop</a>
   <br> 
   <img src="src/img/CapturaD.PNG"  width ="350" heigth = "400">
   <br>
-  <a href="https://zpl.io/a3jw9Xy">Zeplin Mobile</a>
+  <a href="https://zpl.io/2ZnqkgL">Zeplin Mobile</a>
   <br>
   <img src="src/img/CapturaM.PNG">
   </p>
@@ -97,11 +97,11 @@ Para nuestro proyecto **Data Lovers** del Common Core, hemos optado por el tema 
  - *Imagen y link del prototipo de alta fidelidad final (mobile y desktop) en
    Figma.*
   <p align="center">
-  <a href="https://zpl.io/29K8nRy">Zeplin Desktop</a>
+  <a href="https://zpl.io/adN7yv5">Zeplin Desktop</a>
   <br> 
   <img src="src/img/CartillaD3.PNG"  width ="350" heigth = "400">
   <br>
-  <a href="https://zpl.io/blMW6rz">Zeplin Mobile</a>
+  <a href="https://zpl.io/2pkOgwQ">Zeplin Mobile</a>
   <br>
   <img src="src/img/CartillaM3.PNG">
   </p>
@@ -116,11 +116,11 @@ Para nuestro proyecto **Data Lovers** del Common Core, hemos optado por el tema 
   El usuario deseaba una vista muy colorida y muy relacionada al juego, por ello se implementó el boton Pokebola para el ordenado. 
  - *Imagen y link del prototipo de alta fidelidad final (mobile y desktop) en Figma
   <p align="center">
-  <a href="https://zpl.io/VOdgpB1">Zeplin Desktop</a>
+  <a href="https://zpl.io/VDWpn83">Zeplin Desktop</a>
   <br> 
   <img src="src/img/CapturaD4.PNG" width ="350" heigth = "400">
   <br>
-  <a href="https://zpl.io/aw6APnJ">Zeplin Mobile</a>
+  <a href="https://zpl.io/VqLEQNm">Zeplin Mobile</a>
   <br>
   <img src="src/img/CapturaM4.PNG">
   </p>
@@ -134,14 +134,14 @@ Para nuestro proyecto **Data Lovers** del Common Core, hemos optado por el tema 
  - *Imagen y link del prototipo de alta fidelidad final (mobile y desktop) en
    Figma.*
   <p align="center">
-  <a href="https://zpl.io/aMpzj7m">Zeplin Desktop Tipo</a> /
-  <a href="https://zpl.io/V45496Q">Zeplin Desktop Debilidad</a>
+  <a href="https://zpl.io/ame84pr">Zeplin Desktop Tipo</a> /
+  <a href="https://zpl.io/VqLEQJJ">Zeplin Desktop Debilidad</a>
   <br> 
   <img src="src/img/CapturaDType5.PNG" width ="250" heigth = "400">
   <img src="src/img/CapturaDDeb5.PNG"width ="250" heigth = "400">
   <br>
-  <a href="https://zpl.io/2jMXWkx">Zeplin Mobile Tipo</a> /
-  <a href="https://zpl.io/amMrW1m">Zeplin Mobile Debilidad</a>
+  <a href="https://zpl.io/aX9My0M">Zeplin Mobile Tipo</a> /
+  <a href="https://zpl.io/aMRqXyR">Zeplin Mobile Debilidad</a>
   <br>
   <img src="src/img/CapturaMType5.PNG">
   <img src="src/img/CapturaMDeb5.PNG">
@@ -152,11 +152,11 @@ Para nuestro proyecto **Data Lovers** del Common Core, hemos optado por el tema 
  - *Imagen y link del prototipo de alta fidelidad final (mobile y desktop) en
    Figma.*
   <p align="center">
-  <a href="https://zpl.io/2v6zo7n">Zeplin Desktop</a>
+  <a href="https://zpl.io/bAWqK18">Zeplin Desktop</a>
   <br> 
   <img src="src/img/CapturaD6.PNG"  width ="350" heigth = "400">
   <br>
-  <a href="https://zpl.io/a89mJyd">Zeplin Mobile</a>
+  <a href="https://zpl.io/b6gJ3Qy">Zeplin Mobile</a>
   <br>
   <img src="src/img/CapturaM6.PNG">
   </p>
