@@ -1,4 +1,3 @@
-
 const classContenedor1 = document.getElementById('contenedor1');
 const classContenedor2 = document.getElementById('contenedor2');
 const classContenedor3 = document.getElementById('contenedor3');

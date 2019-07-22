@@ -3041,7 +3041,7 @@ const POKEMON = {
     ],
     "height": "0.61 m",
     "weight": "1.0 kg",
-    "candy": "Koffing Candy",
+    "candy": "Koffivg Candy",
     "candy_count": 50,
     "egg": "5 km",
     "spawn_chance": 0.20,
@@ -3053,13 +3053,13 @@ const POKEMON = {
       "Psychic"
     ],
     "next_evolution": [{
-      "num": "110",
-      "name": "Weezing"
+      "vum": "110",
+      "name": "Weezivg"
     }]
   }, {
     "id": 110,
     "num": "110",
-    "name": "Weezing",
+    "name": "Weezivg",
     "img": "http://www.serebii.net/pokemongo/pokemon/110.png",
     "type": [
       "Poison"

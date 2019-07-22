@@ -8,43 +8,14 @@ body{
   background-image: url(http://media-s3-us-east-1.ceros.com/hype-beast/images/2018/07/13/a9a51bc0b8d626db493ab5f9a971b043/background-hero.png);
 }
 header{
-  color:#ffffff;
-  font-family:calibri;
   font-size: 15px;
   height: 64px;
-  z-index: 5;
-  text-align: center;
-}
-main{
-  height: 100%;
-  display: flex;
 }
 /* login---------------------------------------------------------------------------------------------- */
-.margin-auto{
-  margin: auto;
-}
-.fixed{
-  position: fixed;
-}
-.wrap {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.column{
-  display: flex;
-  flex-direction: column;
-}
-.center{
-  display: flex;
-  align-items: center;
-}
 .login {
-  outline: none;
   background-color: #504040;
   width: 375px;
   height: 667px;
-  color: #ffffff;
 }
 .pokePic {
   width: 32%;
@@ -63,47 +34,29 @@ main{
   height: 210px;
   font-size: 17px;
   line-height: 35px;
-  font-family: calibri;
 }
 .user{
-  border-radius:4px;
   padding: 14px;
   height: 35px;
-  font-size: 16px;
 }
 .btn-login{
   background-color: #2C97C1;
   border-color: #2C97C1;
-  color: #ffffff;
-  font-weight: 100;
-  font-size: 16px;
+  /* font-weight: 100; */
   height: 45px;
-  border-radius: 4px;
-}
-#message {
-  align-self: center;
-}
-.register{
-  align-self: center;
 }
 .forgot-password{
   text-align: right;
   margin: 0.4em;
   }
+/* display ---------------------------------------------------------------------------------------------*/
 nav{
   margin-top: 48px;
-}
-input[type="image" i]{
-  width: 100%;
-  border-bottom: solid greenyellow;
-  border-radius: 50%;
 }
 .wp-caption:hover{
   transform: scale(1.3);
   transition:.5s;
-}
-.wp-caption:hover{
-   border-radius: 50%;
+  border-radius: 50%
 }
 .wp-caption {
   position: relative;
@@ -118,90 +71,37 @@ input[type="image" i]{
   }
 .wp-caption-text {
   opacity: 0;
-  position: absolute;
-  width: 100%;
   color: #A1F9FF;
-  bottom: 0;
   padding: 0.5em 0.2em;
   font-weight: 100;
-  font-size: 14px;
-  z-index: 5;
   box-sizing: border-box;
   background-color: rgba(8,9,13,.8);
   transition: opacity .3s ease-in-out;
-  font-family: calibri;
-  border-radius: 50%;
   }
 .wp-caption:hover .wp-caption-text {
   opacity: 1;
-  text-align: center;
   }
 .type_background{
   display: inline;
-  position: absolute;
-  border-radius: 50%;
   z-index: -1;
 }
 /* botones pokebola-------------------------------------------------------------------------------- */
-.contenedor1{
-  width: 70px;
-  height: 245px;
-  right: 0px;
-  bottom:0px;
-  z-index: 6;
-}
-.boton1{
-  width: 50px;
-  height: 50px;
-  background-image: url(img/pokeball.png);
-  right:0;
-  bottom:0;
-  position: absolute;
-  margin-right: 12px;
-  margin-bottom:16px;
-  border: solid white;
-  color:#FFF;
-  font-size:36px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  transition:.3s;
-  z-index: 6;
-}
 .btn{
   width:40px;
   height:40px;
   border:none;
-  color:#FFF;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  font-size:14px;
-  position:absolute;
-  right:0;
-  bottom:0;
+  /* color:#FFF; */
+  /* font-size: 14px; */
   margin-right:26px;
   transform:scale(0);
 }
-.ordenar1{
-  background:#FF0000;
-  margin-right: 18px;
+.contenedor1{
+  height: 245px;
 }
-.boton2{
-  margin-bottom: 70px;
-  transition:0.5s;
-  border:solid #000000;
-}
-.boton3{
-  margin-bottom: 114px;
-  transition:0.7s;
-  border: solid #FFFFFF;
-}
-.boton4{
-  margin-bottom: 158px;
-  transition:0.9s;
-  border:solid #000000;
-}
-.boton5{
-  margin-bottom: 203px;
-  transition:0.9s;
-  border: solid #FFFFFF;
+.boton1{
+  background-image: url(img/pokeball.png);
+  margin-right: 12px;
+  transition:.3s;
 }
 .animacionVer{
   transform:scale(1);
@@ -209,84 +109,41 @@ input[type="image" i]{
 /* boton home------------------------------------------------------------------------------------------ */
 .home{
   background-image: url(img/inicio.png);
-  background-size:cover;
-  width: 50px;
-  height: 50px;
   border:none;
-  color:#FFF;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   left: 0;
-  bottom:0;
   margin-left: 12px;
-  margin-bottom: 16px;
-  z-index: 6;
 }
 /* botones huevo ------------------------------------------------------------------------------------- */
 .contenedor2{
-  width: 70px;
   height: 200px;
   right: 66px;
-  bottom:0px;
-  z-index: 7;
 }
 .boton-huevo{
-  width: 50px;
-  height: 50px;
-  right:0;
-  bottom:0;
   background-image: url(img/huevo.png);
-  position:absolute;
   margin-right: 6px;
-  margin-bottom:16px;
-  border: solid black;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  transition:.3s;
-  z-index: 7;
 }
 .boton2km{
   background:rgb(21, 180, 87);
-  margin-bottom: 70px;
-  margin-right: 13px;
-  transition:0.5s;
   background-image: url(img/2km.png);
 }
 .boton5km{
   background:rgb(243, 175, 27);
-  margin-bottom: 114px;
-  margin-right: 13px;
-  transition:0.7s;
   background-image: url(img/5km.png);
 }
 .boton10km{
   background:#a025be;
-  margin-bottom: 158px;
-  margin-right: 13px;
-  transition:0.9s;
   background-image: url(img/10km.png);
 }
 .not-in-eggs{
   background-image: url(img/huevo.png);
-  position:absolute;
-  margin-bottom: 204px;
-  margin-right: 13px;
-  transition:0.9s;
   filter: brightness(0.5);
   border: solid red;
 }
-/* botones tipo ------------------------------------------------------------------------------------- */
 .contenedor3{
-  width: 160px;
-  height: 356px;
   left: 4.5em;
-  bottom:0px;
-  z-index: 6;
 }
 .contenedor4{
-  width: 160px;
-  height: 356px;
   left: 10em;
-  bottom:0px;
-  z-index: 6;
 }
 .types{
   width: 86px;
@@ -294,126 +151,65 @@ input[type="image" i]{
   border-radius: 20%;
   left: 3px;
   bottom: 7px;
-  position:absolute;
   margin-right: 5px;
   margin-bottom: 18px;
-  color: #000000;
-  font-size: 14px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  transition:.3s;
-  z-index: 6;
 }
 .bug{
-  margin-bottom: 60px;
-  transition:0.5s;
   background-image: url(img/Bug.png);
 }
 .dark{
-  margin-bottom: 105px;
-  transition:0.7s;
   background-image: url(img/Dark.png);
  }
 .dragon{
-  margin-bottom: 150px;
-  transition:0.9s;
   background-image: url(img/Dragon.png);
 }
 .electric{
-  margin-bottom: 195px;
-  transition:1.1s;
   background-image: url(img/Electric.png);
 }
 .fairy{
-  margin-bottom: 240px;
-  transition:1.3s;
   background-image: url(img/Fairy.png);
 }
 .fighting{
-  margin-bottom: 285px;
-  transition:1.5s;
   background-image: url(img/Fighting.png);
   }
 .fire{
-  margin-bottom: 60px;
-  transition:0.5s;
   background-image: url(img/Fire.png);
 }
 .flying{
-  margin-bottom: 105px;
-  transition:0.7s;
   background-image: url(img/Flying.png);
   }
 .ghost{
-  margin-bottom: 150px;
-  transition:0.9s;
   background-image: url(img/Ghost.png);
   }
 .grass{
-  margin-bottom: 195px;
-  transition:1.1s;
   background-image: url(img/Grass.png);
   }
 .ground{
-  margin-bottom: 240px;
-  transition:1.3s;
   background-image: url(img/Ground.png);
   }
 .ice{
-  margin-bottom: 285px;
-  transition:1.5s;
   background-image: url(img/Ice.png);
   }
 .normal{
-  margin-bottom: 60px;
-  margin-right: 90px;
-  transition:0.5s;
   background-image: url(img/Normal.png);
   }
 .poison{
-  margin-bottom: 105px;
-  margin-right: 90px;
-  transition:0.7s;
   background-image: url(img/Poison.png);
   }
 .psychic{
-  margin-bottom: 150px;
-  margin-right: 90px;
-  transition:0.9s;
   background-image: url(img/Psychic.png);
   }
 .rock{
-  margin-bottom: 195px;
-  margin-right: 90px;
-  transition:1.1s;
   background-image: url(img/Rock.png);
   }
 .steel{
-  margin-bottom: 240px;
-  margin-right: 90px;
-  transition:1.3s;
   background-image: url(img/Steel.png);
   }
 .water{
   margin-bottom: 285px;
-  margin-right: 90px;
-  transition:1.5s;
   background-image: url(img/Water.png);
   }
-.active{
-  transform:scale(1.1);
-}
-.cover{
-  background-size: cover;
-}
-.m-right0{
-   margin-right: 0px;
-}
-.m-right45{
-  margin-right: 45px;
-}
-.radius100{
-  border-radius: 100%;
- }
+ /* display ---------------------------------------------------------------*/
 body > nav {
   height: 100%;
   width: 100%;  
@@ -427,16 +223,15 @@ body > nav {
   border-radius: 25px;
 }
 .cardImg {
-  width: 46vw;
+  width: 40vw;
   margin: 1em auto 0em;
-  border-bottom: solid greenyellow;
   border-right: solid greenyellow;
   border-width: 0.5em;
-  border-radius: 50%;
   background-color: white;
 }
 .characteristics{
-  color: #FFFFFF;
+  align-items: center;
+  height: 284px;
 }
 .size-img{
   width: 20px;
@@ -446,11 +241,171 @@ body > nav {
   justify-content: space-evenly;
   width: 50vh;
 }
-
-/* media query----------------------------------------------------------------------------- */
+.wrap{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
+.center-t{
+  text-align: center;
+}
+.center-s{
+  align-self: center;
+}
+.cover{
+  background-size: cover;
+}
+.absolute{
+  position: absolute;
+}
+.fixed{
+  position: fixed;
+}
+.m-auto{
+margin: auto;
+}
+.shadow{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.active{
+  transform:scale(1.1);
+}
+.m-right18{
+  margin-right: 18px;
+}
+.m-right13{
+  margin-right: 13px;
+}
+.m-right0{
+  margin-right: 0px;
+}
+.m-right45{
+  margin-right: 45px;
+}
+.m-right90{
+  margin-right: 90px;
+}
+.right0{
+  right:0;
+}
+.bottom0{
+bottom:0;
+}
+.b-radius4{
+  border-radius: 4%;
+}
+.b-radius50{
+  border-radius: 50%;
+}
+.b-radius100{
+  border-radius: 100%;
+}
+.transition05{
+  transition:0.5s;
+}
+.transition07{
+  transition:0.7s;
+}
+.transition09{
+  transition:0.9s;
+}
+.transition11{
+  transition:1.1s;
+}
+.transition13{
+  transition:1.3s;
+}
+.transition15{
+  transition:1.5s;
+}
+.m-bottom16{
+  margin-bottom:16px;
+}
+.m-bottom60{
+  margin-bottom: 60px;
+}
+.m-bottom70{
+  margin-bottom: 70px;
+}
+.m-bottom105{
+  margin-bottom: 105px;
+}
+.m-bottom114{
+  margin-bottom: 114px;
+}
+.m-bottom150{
+  margin-bottom: 150px;
+}
+.m-bottom158{
+  margin-bottom: 158px;
+}
+.m-bottom195{
+  margin-bottom: 195px;
+}
+.m-bottom203{
+  margin-bottom: 203px;
+}
+.m-bottom240{
+  margin-bottom: 240px;
+}
+.m-bottom285{
+  margin-bottom: 285px;
+  }
+.calibri{
+  font-family: calibri;
+}
+.font14{
+  font-size: 14px;
+}
+.font16{
+  font-size: 16px;
+}
+.white{
+  color:#ffffff;
+}
+.bgdred{
+  background:#FF0000;
+}
+.border-black{
+  border:solid #000000;
+}
+.border-white{
+  border: solid #FFFFFF;
+}
+.z-index5{
+  z-index: 5;
+  }
+.z-index6{
+z-index: 6;
+}
+.z-index7{
+  z-index: 7;
+  }
+.butt-size{
+  width: 50px;
+  height: 50px;
+}
+.cont-size{
+  width: 160px;
+  height: 356px;
+}
+.width70{
+  width: 70px;
+}
+.width100{
+width: 100%;
+}
+.border-gy{
+border-bottom: solid greenyellow;
+}
+/* media query------------------------------------------------------------------------------------------------------------------------- */
 @media only screen and (min-width: 376px){
+
   html,body{
-      
       background-size: cover;
       background-repeat: repeat-y;
       height: 100%;
@@ -503,7 +458,10 @@ body > nav {
     width: 85px;
     left: 13em;
   }
+  .home{
+    position: fixed;
+  }
+  }
   .hide{
     display: none;
   }
-}

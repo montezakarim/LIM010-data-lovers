@@ -247,8 +247,8 @@ const showCard = (idPoke) => {
   pokemons.forEach(poke =>{ 
     if (parseInt(idPoke) === poke.id) {
       card.innerHTML = `
-      <img class="cardImg" src="${poke.img}" alt="${poke.name}" >
-      <aside class="characteristics column center">
+      <img class="cardImg b-radius50 border-gy" src="${poke.img}" alt="${poke.name}" >
+      <aside class="characteristics column white">
       <h2>${poke.name}</h2>
       <aside class="pokedex">
         <div>
@@ -268,7 +268,7 @@ const showCard = (idPoke) => {
           <img class"size-img" src="img/${poke.type[0]}.png" alt="${poke.type[0]}" >
           <img class"size-img" src="img/${poke.type[1]}.png" alt="${poke.type[1]}" >
           <img class"size-img" src="img/${poke.type[2]}.png" alt="${poke.type[2]}" >
-          <img class"size-img" src="img/${poke.type[3]}.png" alt="${poke.type[3]}" >
+          <img class"size-img" src="img/${poke.type[3]}.jpg" alt="${poke.type[3]}" >
           </div>
         </div>
         <div>
@@ -293,19 +293,19 @@ const showDisplay = (arrayToPrint) =>{
   arrayToPrint.forEach(poke =>{
     if (poke.multipliers === null) {
       displayPokemon.innerHTML += `
-        <figure class="wp-caption wrap margin-auto">
-        <input class="pokePic untrapped" name="${poke.name}" id="${poke.id}" type="image" src="${poke.img}" alt="${poke.name}">
-        <img class="type_background" src="img/Type_Background_${poke.type[0]}.png" alt="Type_Background_${poke.type[0]}.png">
-        <figcaption class="wp-caption-text" type="button">${poke.name} 0</figcaption>
+        <figure class="wp-caption wrap center-t m-auto">
+        <input class="pokePic untrapped b-radius50 width100 border-gy" name="${poke.name}" id="${poke.id}" type="image" src="${poke.img}" alt="${poke.name}">
+        <img class="type_background absolute b-radius50" src="img/Type_Background_${poke.type[0]}.png" alt="Type_Background_${poke.type[0]}.png">
+        <figcaption class="wp-caption-text center-t absolute bottom0 b-radius50 calibri font14 z-index5" type="button width100">${poke.name} 0</figcaption>
         </figure>`;
       noPokemons += poke;
       return noPokemons;
     } else {
       displayPokemon.innerHTML += `
-      <figure class="wp-caption wrap margin-auto">
-      <input class="pokePic" name="${poke.name}" id="${poke.id}" type="image" src="${poke.img}" alt="${poke.name}">
-      <img class="type_background" src="img/Type_Background_${poke.type[0]}.png" alt="Type_Background_${poke.type[0]}.png">
-      <figcaption class="wp-caption-text" type="button">${poke.name} ${poke.multipliers.length}</figcaption>
+      <figure class="wp-caption wrap center-t m-auto">
+      <input class="pokePic b-radius50 width100 border-gy" name="${poke.name}" id="${poke.id}" type="image" src="${poke.img}" alt="${poke.name}">
+      <img class="type_background absolute b-radius50" src="img/Type_Background_${poke.type[0]}.png" alt="Type_Background_${poke.type[0]}.png">
+      <figcaption class="wp-caption-text center-t absolute bottom0 b-radius50 calibri font14 z-index5 width100" type="button">${poke.name} ${poke.multipliers.length}</figcaption>
       </figure> `;
       thePokemons += poke;
       return thePokemons;
