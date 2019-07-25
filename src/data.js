@@ -1,46 +1,32 @@
-const sortPoke = (data, sortOrder) => {
-  const arrSortName = data.slice().sort((aa, bb) => {
-    if (aa.name > bb.name) {
-      return 1;
-    } if (aa.name < bb.name) {
-      return -1;
+const sortPoke = (data, sortOrder, property) => {
+  const arrSort = data.slice().sort((aa, bb) => {
+    if (property === 'name') {
+      if (aa.name > bb.name) {
+        return 1;
+      } if (aa.name < bb.name) {
+        return -1;
+      }
+    } else {
+      if (aa.avg_spawns > bb.avg_spawns) {
+        return 1;
+      } if (aa.avg_spawns < bb.avg_spawns) {
+        return -1;
+      }
     }
   });
-  if (sortOrder === 'nameup') {   
-    return arrSortName;
+  if (sortOrder === '0') {   
+    return arrSort;
   }
-  if (sortOrder === 'namedown') {
-    return arrSortName.reverse();
+  if (sortOrder === '1') {
+    return arrSort.reverse();
   }
 };
  
-const sortSpawns = (data, sortOrder) => {
-  const arrSortSpawns = data.slice().sort((aa, bb) => {
-    if (aa.avg_spawns > bb.avg_spawns) {
-      return 1;
-    } if (aa.avg_spawns < bb.avg_spawns) {
-      return -1;
-    }
-  });
-  if (sortOrder === 'avgup') {
-    return arrSortSpawns;
-  }
-  if (sortOrder === 'avgdown') {
-    return arrSortSpawns.reverse();
-  }
-};
-
-const filterEgg = (data, kms) => {
+const filterEgg = (data, kms, option) => {
   let egg = [];
-  if (kms === '2 km') {
-    egg = data.filter(poke => (poke.egg === '2 km'));
-  } else if (kms === '5 km') {
-    egg = data.filter(poke => (poke.egg === '5 km'));
-  } else if (kms === '10 km') {
-    egg = data.filter(poke => (poke.egg === '10 km'));
-  } else if (kms === 'Not in Eggs') {
-    egg = data.filter(poke => (poke.egg === 'Not in Eggs'));
-  }
+  if (kms === option) {
+    egg = data.filter(poke => (poke.egg === option));
+  } 
   return egg;
 };
 
@@ -71,5 +57,4 @@ const filterByWeaknesses = (condition, filterArray) =>{
 window.filterByTypes = filterByTypes;
 window.filterByWeaknesses = filterByWeaknesses;
 window.sortPoke = sortPoke;
-window.sortSpawns = sortSpawns;
 window.filterEgg = filterEgg;

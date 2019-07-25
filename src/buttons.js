@@ -1,7 +1,7 @@
-const classContenedor1 = document.getElementById('contenedor1');
-const classContenedor2 = document.getElementById('contenedor2');
-const classContenedor3 = document.getElementById('contenedor3');
-const classContenedor4 = document.getElementById('contenedor4'); 
+const orderData = document.getElementById('contenedor1');
+const eggData = document.getElementById('contenedor2');
+const typeData = document.getElementById('contenedor3');
+const weaknessData = document.getElementById('contenedor4'); 
 // cambiar nombre botones ordenado
 const btnPokeball = document.getElementById('btn-pokeball');
 const btnZa = document.getElementById('btnza');
@@ -56,35 +56,35 @@ const steelw = document.getElementById('steelw');
 const waterw = document.getElementById('waterw');
 
 const mouseOver1 = () => {
-  classContenedor1.classList.add('animacionVer');
+  orderData.classList.add('animacionVer');
   btnZa.classList.add('animacionVer');
   btnAz.classList.add('animacionVer');
   btnFup.classList.add('animacionVer');
   btnFdown.classList.add('animacionVer');
 };
 const mouseOut1 = () => {
-  classContenedor1.classList.remove('animacionVer');
+  orderData.classList.remove('animacionVer');
   btnZa.classList.remove('animacionVer');
   btnAz.classList.remove('animacionVer');
   btnFup.classList.remove('animacionVer');
   btnFdown.classList.remove('animacionVer');
 };
 const mouseOver2 = () => {
-  classContenedor2.classList.add('animacionVer');
+  eggData.classList.add('animacionVer');
   btn2km.classList.add('animacionVer');
   btn5km.classList.add('animacionVer');
   btn10km.classList.add('animacionVer');
   notInEggs.classList.add('animacionVer');
 };
 const mouseOut2 = () => {
-  classContenedor2.classList.remove('animacionVer');
+  eggData.classList.remove('animacionVer');
   btn2km.classList.remove('animacionVer');
   btn5km.classList.remove('animacionVer');
   btn10km.classList.remove('animacionVer');
   notInEggs.classList.remove('animacionVer');
 };
 const mouseOver3 = () => {
-  classContenedor3.classList.add('animacionVer');
+  typeData.classList.add('animacionVer');
   bug.classList.add('animacionVer');
   dark.classList.add('animacionVer');
   dragon.classList.add('animacionVer');
@@ -105,7 +105,7 @@ const mouseOver3 = () => {
   water.classList.add('animacionVer');
 };
 const mouseOut3 = () => {
-  classContenedor3.classList.remove('animacionVer');
+  typeData.classList.remove('animacionVer');
   bug.classList.remove('animacionVer');
   dark.classList.remove('animacionVer');
   dragon.classList.remove('animacionVer');
@@ -126,7 +126,7 @@ const mouseOut3 = () => {
   water.classList.remove('animacionVer');
 };
 const mouseOver4 = () => {
-  classContenedor4.classList.add('animacionVer');
+  weaknessData.classList.add('animacionVer');
   bugw.classList.add('animacionVer');
   darkw.classList.add('animacionVer');
   dragonw.classList.add('animacionVer');
@@ -147,7 +147,7 @@ const mouseOver4 = () => {
   waterw.classList.add('animacionVer');
 };
 const mouseOut4 = () => {
-  classContenedor4.classList.remove('animacionVer');
+  weaknessData.classList.remove('animacionVer');
   bugw.classList.remove('animacionVer');
   darkw.classList.remove('animacionVer');
   dragonw.classList.remove('animacionVer');
@@ -173,14 +173,14 @@ btnZa.addEventListener('mouseover', mouseOver1);
 btnAz.addEventListener('mouseover', mouseOver1);
 btnFup.addEventListener('mouseover', mouseOver1);
 btnFdown.addEventListener('mouseover', mouseOver1);
-classContenedor1.addEventListener('mouseout', mouseOut1);
+orderData.addEventListener('mouseout', mouseOut1);
 
 btnh.addEventListener('mouseover', mouseOver2);
 btn2km.addEventListener('mouseover', mouseOver2);
 btn5km.addEventListener('mouseover', mouseOver2);
 btn10km.addEventListener('mouseover', mouseOver2);
 notInEggs.addEventListener('mouseover', mouseOver2);
-classContenedor2.addEventListener('mouseout', mouseOut2);
+eggData.addEventListener('mouseout', mouseOut2);
 
 types.addEventListener('mouseover', mouseOver3);
 bug.addEventListener('mouseover', mouseOver3);
@@ -201,7 +201,7 @@ psychic.addEventListener('mouseover', mouseOver3);
 rock.addEventListener('mouseover', mouseOver3);
 steel.addEventListener('mouseover', mouseOver3);
 water.addEventListener('mouseover', mouseOver3);
-classContenedor3.addEventListener('mouseout', mouseOut3);
+typeData.addEventListener('mouseout', mouseOut3);
 
 weakness.addEventListener('mouseover', mouseOver4);
 bugw.addEventListener('mouseover', mouseOver4);
@@ -222,4 +222,4 @@ psychicw.addEventListener('mouseover', mouseOver4);
 rockw.addEventListener('mouseover', mouseOver4);
 steelw.addEventListener('mouseover', mouseOver4);
 waterw.addEventListener('mouseover', mouseOver4);
-classContenedor4.addEventListener('mouseout', mouseOut4);
+weaknessData.addEventListener('mouseout', mouseOut4);
