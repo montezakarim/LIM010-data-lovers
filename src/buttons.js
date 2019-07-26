@@ -55,13 +55,16 @@ const rockw = document.getElementById('rockw');
 const steelw = document.getElementById('steelw');
 const waterw = document.getElementById('waterw');
 
-const mouseOver1 = () => {
-  orderData.classList.add('animacionVer');
-  btnZa.classList.add('animacionVer');
-  btnAz.classList.add('animacionVer');
-  btnFup.classList.add('animacionVer');
-  btnFdown.classList.add('animacionVer');
-};
+orderData.addEventListener('mouseover', (event) => {
+  event.target.animacionVer;
+});
+// const mouseOver1 = () => {
+//   orderData.classList.add('animacionVer');
+//   btnZa.classList.add('animacionVer');
+//   btnAz.classList.add('animacionVer');
+//   btnFup.classList.add('animacionVer');
+//   btnFdown.classList.add('animacionVer');
+// };
 const mouseOut1 = () => {
   orderData.classList.remove('animacionVer');
   btnZa.classList.remove('animacionVer');

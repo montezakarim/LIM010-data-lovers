@@ -14,7 +14,6 @@ const displayPokemon = document.getElementsByClassName('my-pokemon-pics')[0];
 const card = document.getElementById('card');
 const home = document.getElementById('home');
 
-
 const loginAccess = () => {
   const password = document.getElementById('password').value;
   const email = document.getElementById('email').value;
@@ -37,8 +36,6 @@ const getId = (event) => {
 btnLogin.addEventListener('click', loginAccess);
 
 parentNav.addEventListener('click', getId);
-
-
 typeData.addEventListener('click', (event) => {
   let type = event.target.value;
   if (type !== undefined) {
@@ -46,7 +43,6 @@ typeData.addEventListener('click', (event) => {
     showDisplay(filterByTypes(type, pokemons));
   }
 });
-
 weaknessData.addEventListener('click', (event) =>{
   let weakness = event.target.value;
   if (weakness !== undefined) {
