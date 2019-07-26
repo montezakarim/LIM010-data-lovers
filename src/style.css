@@ -146,10 +146,9 @@ nav{
   left: 10em;
 }
 .types{
-  width: 86px;
+  width: 70px;
   height: 29px;
   border-radius: 20%;
-  left: 3px;
   bottom: 7px;
   margin-right: 5px;
   margin-bottom: 18px;
@@ -358,8 +357,8 @@ bottom:0;
 .calibri{
   font-family: calibri;
 }
-.font14{
-  font-size: 14px;
+.font10{
+  font-size: 10px;
 }
 .font16{
   font-size: 16px;
@@ -449,14 +448,18 @@ border-bottom: solid greenyellow;
     margin-top: 3em;
   }
   .deb{
-    margin-left: 130px;
-    width: 85px;
-    left: 22em;
+    margin-left: 50px;
+    width: 90px;
+    height: 35px;
+    border-radius: 20%;
+    font-size: 14px;
   }
   .typ{
-    margin-left: 80px;
-    width: 85px;
-    left: 13em;
+    margin-left: 30px;
+    width: 90px;
+    height: 35px;
+    border-radius: 20%;
+    font-size: 14px;
   }
   .home{
     position: fixed;

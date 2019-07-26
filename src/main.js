@@ -14,6 +14,7 @@ const displayPokemon = document.getElementsByClassName('my-pokemon-pics')[0];
 const card = document.getElementById('card');
 const home = document.getElementById('home');
 
+
 const loginAccess = () => {
   const password = document.getElementById('password').value;
   const email = document.getElementById('email').value;
@@ -71,14 +72,15 @@ btnFdown.addEventListener('click', () => {
   displayPokemon.innerHTML = null;
   showDisplay(sortPoke(filteredArray, '1', 'avg-spawns'));
 });
-let result = [];
+
 eggData.addEventListener('click', (event) => {
   let kms = event.target.value;
+  let result = [];
   if (kms !== undefined) {
     displayPokemon.innerHTML = null;
     result = filterEgg(pokemons, kms, kms);
     showDisplay(result);
-    header.innerHTML = `Pokemones que nacen de huevos de &kms corresponden al &nbsp; ${((result.length) / 151 * 100).toFixed(2)}% de la region Kanto`;
+    header.innerHTML = `Pokemones que nacen de huevos de ${kms} corresponden al &nbsp; ${((result.length) / 151 * 100).toFixed(2)}% de la region Kanto`;
   }
 });
 
@@ -150,7 +152,7 @@ const showDisplay = (arrayToPrint) =>{
         <figure class="wp-caption wrap center-t m-auto">
         <input class="pokePic untrapped b-radius50 width100 border-gy" name="${poke.name}" id="${poke.id}" type="image" src="${poke.img}" alt="${poke.name}">
         <img class="type_background absolute b-radius50" src="img/Type_Background_${poke.type[0]}.png" alt="Type_Background_${poke.type[0]}.png">
-        <figcaption class="wp-caption-text center-t absolute bottom0 b-radius50 calibri font14 z-index5" type="button width100">${poke.name} 0</figcaption>
+        <figcaption class="wp-caption-text center-t absolute bottom0 b-radius50 calibri font14 z-index5 width100" type="button">${poke.name} 0</figcaption>
         </figure>`;
       noPokemons += poke;
       return noPokemons;
