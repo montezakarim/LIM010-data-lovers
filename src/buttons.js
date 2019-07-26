@@ -3,19 +3,16 @@ const eggData = document.getElementById('contenedor2');
 const typeData = document.getElementById('contenedor3');
 const weaknessData = document.getElementById('contenedor4'); 
 // cambiar nombre botones ordenado
-const btnPokeball = document.getElementById('btn-pokeball');
 const btnZa = document.getElementById('btnza');
 const btnAz = document.getElementById('btnaz');
 const btnFup = document.getElementById('btnfup');
 const btnFdown = document.getElementById('btnfdown');
 
-const btnh = document.getElementById('btnh');
 const btn2km = document.getElementById('btn2km');
 const btn5km = document.getElementById('btn5km');
 const btn10km = document.getElementById('btn10km');
 const notInEggs = document.getElementById('not-in-eggs');
 
-const types = document.getElementById('types');
 const bug = document.getElementById('bug');
 const dark = document.getElementById('dark');
 const dragon = document.getElementById('dragon');
@@ -35,7 +32,7 @@ const rock = document.getElementById('rock');
 const steel = document.getElementById('steel');
 const water = document.getElementById('water');
 
-const weakness = document.getElementById('weakness');
+
 const bugw = document.getElementById('bugw');
 const darkw = document.getElementById('darkw');
 const dragonw = document.getElementById('dragonw');
@@ -55,16 +52,13 @@ const rockw = document.getElementById('rockw');
 const steelw = document.getElementById('steelw');
 const waterw = document.getElementById('waterw');
 
-orderData.addEventListener('mouseover', (event) => {
-  event.target.animacionVer;
-});
-// const mouseOver1 = () => {
-//   orderData.classList.add('animacionVer');
-//   btnZa.classList.add('animacionVer');
-//   btnAz.classList.add('animacionVer');
-//   btnFup.classList.add('animacionVer');
-//   btnFdown.classList.add('animacionVer');
-// };
+const mouseOver1 = () => {
+  orderData.classList.add('animacionVer');
+  btnZa.classList.add('animacionVer');
+  btnAz.classList.add('animacionVer');
+  btnFup.classList.add('animacionVer');
+  btnFdown.classList.add('animacionVer');
+};
 const mouseOut1 = () => {
   orderData.classList.remove('animacionVer');
   btnZa.classList.remove('animacionVer');
@@ -171,58 +165,14 @@ const mouseOut4 = () => {
   waterw.classList.remove('animacionVer');
 };
 
-btnPokeball.addEventListener('mouseover', mouseOver1);
-btnZa.addEventListener('mouseover', mouseOver1);
-btnAz.addEventListener('mouseover', mouseOver1);
-btnFup.addEventListener('mouseover', mouseOver1);
-btnFdown.addEventListener('mouseover', mouseOver1);
+orderData.addEventListener('mouseover', mouseOver1);
 orderData.addEventListener('mouseout', mouseOut1);
 
-btnh.addEventListener('mouseover', mouseOver2);
-btn2km.addEventListener('mouseover', mouseOver2);
-btn5km.addEventListener('mouseover', mouseOver2);
-btn10km.addEventListener('mouseover', mouseOver2);
-notInEggs.addEventListener('mouseover', mouseOver2);
+eggData.addEventListener('mouseover', mouseOver2);
 eggData.addEventListener('mouseout', mouseOut2);
 
-types.addEventListener('mouseover', mouseOver3);
-bug.addEventListener('mouseover', mouseOver3);
-dark.addEventListener('mouseover', mouseOver3);
-dragon.addEventListener('mouseover', mouseOver3);
-electric.addEventListener('mouseover', mouseOver3);
-fairy.addEventListener('mouseover', mouseOver3);
-fighting.addEventListener('mouseover', mouseOver3);
-fire.addEventListener('mouseover', mouseOver3);
-flying.addEventListener('mouseover', mouseOver3);
-ghost.addEventListener('mouseover', mouseOver3);
-grass.addEventListener('mouseover', mouseOver3);
-ground.addEventListener('mouseover', mouseOver3);
-ice.addEventListener('mouseover', mouseOver3);
-normal.addEventListener('mouseover', mouseOver3);
-poison.addEventListener('mouseover', mouseOver3);
-psychic.addEventListener('mouseover', mouseOver3);
-rock.addEventListener('mouseover', mouseOver3);
-steel.addEventListener('mouseover', mouseOver3);
-water.addEventListener('mouseover', mouseOver3);
+typeData.addEventListener('mouseover', mouseOver3);
 typeData.addEventListener('mouseout', mouseOut3);
 
-weakness.addEventListener('mouseover', mouseOver4);
-bugw.addEventListener('mouseover', mouseOver4);
-darkw.addEventListener('mouseover', mouseOver4);
-dragonw.addEventListener('mouseover', mouseOver4);
-electricw.addEventListener('mouseover', mouseOver4);
-fairyw.addEventListener('mouseover', mouseOver4);
-fightingw.addEventListener('mouseover', mouseOver4);
-firew.addEventListener('mouseover', mouseOver4);
-flyingw.addEventListener('mouseover', mouseOver4);
-ghostw.addEventListener('mouseover', mouseOver4);
-grassw.addEventListener('mouseover', mouseOver4);
-groundw.addEventListener('mouseover', mouseOver4);
-icew.addEventListener('mouseover', mouseOver4);
-normalw.addEventListener('mouseover', mouseOver4);
-poisonw.addEventListener('mouseover', mouseOver4);
-psychicw.addEventListener('mouseover', mouseOver4);
-rockw.addEventListener('mouseover', mouseOver4);
-steelw.addEventListener('mouseover', mouseOver4);
-waterw.addEventListener('mouseover', mouseOver4);
+weaknessData.addEventListener('mouseover', mouseOver4);
 weaknessData.addEventListener('mouseout', mouseOut4);

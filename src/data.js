@@ -1,17 +1,9 @@
 const sortPoke = (data, sortOrder, property) => {
   const arrSort = data.slice().sort((aa, bb) => {
-    if (property === 'name') {
-      if (aa.name > bb.name) {
-        return 1;
-      } if (aa.name < bb.name) {
-        return -1;
-      }
-    } else {
-      if (aa.avg_spawns > bb.avg_spawns) {
-        return 1;
-      } if (aa.avg_spawns < bb.avg_spawns) {
-        return -1;
-      }
+    if (aa[property] > bb[property]) {
+      return 1;
+    } if (aa[property] < bb[property]) {
+      return -1;
     }
   });
   if (sortOrder === '0') {   
@@ -30,10 +22,10 @@ const filterEgg = (data, kms, option) => {
   return egg;
 };
 
-const filterByTypes = (condition, filterArray) => {
+const filterData = (condition, filterArray, property) => {
   filteredArray = [];
   filterArray.forEach(poke => {
-    for (let i = 0; i < poke.type.length; i++) {
+    for (let i = 0; i < poke[property].length; i++) {
       if (poke.type[i] === condition) {
         filteredArray.push(poke); 
       } 
@@ -42,19 +34,6 @@ const filterByTypes = (condition, filterArray) => {
   return filteredArray;
 };
 
-const filterByWeaknesses = (condition, filterArray) =>{
-  filteredArray = [];
-  filterArray.forEach(poke => {
-    for (let i = 0; i < poke.weaknesses.length; i++) {
-      if (poke.weaknesses[i] === condition) {
-        filteredArray.push(poke); 
-      } 
-    } 
-  });                          
-  return filteredArray;
-};
-
-window.filterByTypes = filterByTypes;
-window.filterByWeaknesses = filterByWeaknesses;
+window.filterData = filterData;
 window.sortPoke = sortPoke;
 window.filterEgg = filterEgg;

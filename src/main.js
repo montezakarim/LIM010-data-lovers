@@ -34,24 +34,22 @@ const getId = (event) => {
 };
 
 btnLogin.addEventListener('click', loginAccess);
-
 parentNav.addEventListener('click', getId);
+
 typeData.addEventListener('click', (event) => {
-  let type = event.target.value;
-  if (type !== undefined) {
+  let types = event.target.value;
+  if (types !== undefined) {
     displayPokemon.innerHTML = null;
-    showDisplay(filterByTypes(type, pokemons));
+    showDisplay(filterData(types, pokemons, 'type'));
   }
 });
 weaknessData.addEventListener('click', (event) =>{
   let weakness = event.target.value;
   if (weakness !== undefined) {
     displayPokemon.innerHTML = null;
-    showDisplay(filterByWeaknesses(weakness, pokemons));
+    showDisplay(filterData(weakness, pokemons, 'weaknesses'));
   }
 });
-
-
 btnZa.addEventListener('click', () => {
   displayPokemon.innerHTML = null;
   showDisplay(sortPoke(filteredArray, '1', 'name'));

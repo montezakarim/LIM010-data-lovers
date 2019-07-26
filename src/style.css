@@ -448,18 +448,16 @@ border-bottom: solid greenyellow;
     margin-top: 3em;
   }
   .deb{
-    margin-left: 50px;
-    width: 90px;
-    height: 35px;
-    border-radius: 20%;
-    font-size: 14px;
+    margin-left: 90px;
   }
   .typ{
     margin-left: 30px;
-    width: 90px;
+  }
+  .types{
+    font-size: 20px;
+    width: 120px;
     height: 35px;
     border-radius: 20%;
-    font-size: 14px;
   }
   .home{
     position: fixed;
